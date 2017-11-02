@@ -1,0 +1,36 @@
+{
+  "name": "eslint-plugin-yola",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint -c .eslintrc.js ./**/*.js",
+    "test": "echo 'All good'",
+    "prepublish": "npm run lint && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yola/eslint-plugin-yola.git"
+  },
+  "author": "Yola Engineering <engineers@yola.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yola/eslint-plugin-yola/issues"
+  },
+  "homepage": "https://github.com/yola/eslint-plugin-yola#readme",
+  "dependencies": {
+    "babel-eslint": "8.x",
+    "eslint": "4.x",
+    "eslint-config-airbnb": "16.x",
+    "eslint-config-airbnb-base": "12.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jsx-a11y": "6.x",
+    "eslint-plugin-react": "7.x",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "eslint": "4.x"
+  },
+  "peerDependencies": {
+    "eslint": "4.x"
+  }
+}
