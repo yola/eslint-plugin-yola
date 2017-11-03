@@ -20,7 +20,7 @@ const getConfigRules = config => Object
     return result;
   }, {});
 
-const getConfigBase = () => Object.assign({
+const getConfigBase = () => ({
   parser: require.resolve('babel-eslint'),
   plugins: ['yola'],
 });
