@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Plugin must contain configs and rules properties 1`] = `
+exports[`eslint-plugin-yola must contain configs and rules properties 1`] = `
 Object {
   "base": Object {
     "env": Object {
       "es6": true,
       "node": true,
     },
-    "parser": "/home/rusinov/yola/eslint-plugin-yola/node_modules/babel-eslint/index.js",
+    "parser": true,
     "parserOptions": Object {
       "ecmaFeatures": Object {
         "experimentalObjectRestSpread": true,
@@ -21,1150 +21,292 @@ Object {
       "yola",
     ],
     "rules": Object {
-      "accessor-pairs": "off",
-      "array-bracket-newline": Array [
-        "off",
-        "consistent",
-      ],
-      "array-bracket-spacing": Array [
-        "error",
-        "never",
-      ],
-      "array-callback-return": "error",
-      "array-element-newline": Array [
-        "off",
-        Object {
-          "minItems": 3,
-          "multiline": true,
-        },
-      ],
-      "arrow-body-style": Array [
-        "error",
-        "as-needed",
-        Object {
-          "requireReturnForObjectLiteral": false,
-        },
-      ],
-      "arrow-parens": Array [
-        "error",
-        "as-needed",
-        Object {
-          "requireForBlockBody": true,
-        },
-      ],
-      "arrow-spacing": Array [
-        "error",
-        Object {
-          "after": true,
-          "before": true,
-        },
-      ],
-      "block-scoped-var": "error",
-      "block-spacing": Array [
-        "error",
-        "always",
-      ],
-      "brace-style": Array [
-        "error",
-        "1tbs",
-        Object {
-          "allowSingleLine": true,
-        },
-      ],
-      "callback-return": "off",
-      "camelcase": Array [
-        "error",
-        Object {
-          "properties": "never",
-        },
-      ],
-      "capitalized-comments": Array [
-        "off",
-        "never",
-        Object {
-          "block": Object {
-            "ignoreConsecutiveComments": true,
-            "ignoreInlineComments": true,
-            "ignorePattern": ".*",
-          },
-          "line": Object {
-            "ignoreConsecutiveComments": true,
-            "ignoreInlineComments": true,
-            "ignorePattern": ".*",
-          },
-        },
-      ],
-      "class-methods-use-this": Array [
-        "error",
-        Object {
-          "exceptMethods": Array [],
-        },
-      ],
-      "comma-dangle": Array [
-        "error",
-        Object {
-          "arrays": "always-multiline",
-          "exports": "always-multiline",
-          "functions": "always-multiline",
-          "imports": "always-multiline",
-          "objects": "always-multiline",
-        },
-      ],
-      "comma-spacing": Array [
-        "error",
-        Object {
-          "after": true,
-          "before": false,
-        },
-      ],
-      "comma-style": Array [
-        "error",
-        "last",
-      ],
-      "complexity": Array [
-        "off",
-        11,
-      ],
-      "computed-property-spacing": Array [
-        "error",
-        "never",
-      ],
-      "consistent-return": "error",
-      "consistent-this": "off",
-      "constructor-super": "error",
-      "curly": Array [
-        "error",
-        "multi-line",
-      ],
-      "default-case": Array [
-        "error",
-        Object {
-          "commentPattern": "^no default$",
-        },
-      ],
-      "dot-location": Array [
-        "error",
-        "property",
-      ],
-      "dot-notation": Array [
-        "error",
-        Object {
-          "allowKeywords": true,
-        },
-      ],
-      "eol-last": Array [
-        "error",
-        "always",
-      ],
-      "eqeqeq": Array [
-        "error",
-        "always",
-        Object {
-          "null": "ignore",
-        },
-      ],
-      "for-direction": "error",
-      "func-call-spacing": Array [
-        "error",
-        "never",
-      ],
-      "func-name-matching": Array [
-        "off",
-        "always",
-        Object {
-          "includeCommonJSModuleExports": false,
-        },
-      ],
-      "func-names": "warn",
-      "func-style": Array [
-        "off",
-        "expression",
-      ],
-      "function-paren-newline": Array [
-        "error",
-        "multiline",
-      ],
-      "generator-star-spacing": Array [
-        "error",
-        Object {
-          "after": true,
-          "before": false,
-        },
-      ],
-      "getter-return": Array [
-        "error",
-        Object {
-          "allowImplicit": true,
-        },
-      ],
-      "global-require": "error",
-      "guard-for-in": "error",
-      "handle-callback-err": "off",
-      "id-blacklist": "off",
-      "id-length": "off",
-      "id-match": "off",
-      "indent": Array [
-        "error",
-        2,
-        Object {
-          "ArrayExpression": 1,
-          "CallExpression": Object {
-            "arguments": 1,
-          },
-          "FunctionDeclaration": Object {
-            "body": 1,
-            "parameters": 1,
-          },
-          "FunctionExpression": Object {
-            "body": 1,
-            "parameters": 1,
-          },
-          "ImportDeclaration": 1,
-          "ObjectExpression": 1,
-          "SwitchCase": 1,
-          "VariableDeclarator": 1,
-          "flatTernaryExpressions": false,
-          "ignoredNodes": Array [
-            "JSXElement",
-            "JSXElement *",
-          ],
-          "outerIIFEBody": 1,
-        },
-      ],
-      "init-declarations": "off",
-      "jsx-quotes": Array [
-        "off",
-        "prefer-double",
-      ],
-      "key-spacing": Array [
-        "error",
-        Object {
-          "afterColon": true,
-          "beforeColon": false,
-        },
-      ],
-      "keyword-spacing": Array [
-        "error",
-        Object {
-          "after": true,
-          "before": true,
-          "overrides": Object {
-            "case": Object {
-              "after": true,
-            },
-            "return": Object {
-              "after": true,
-            },
-            "throw": Object {
-              "after": true,
-            },
-          },
-        },
-      ],
-      "line-comment-position": Array [
-        "off",
-        Object {
-          "applyDefaultPatterns": true,
-          "ignorePattern": "",
-          "position": "above",
-        },
-      ],
-      "linebreak-style": Array [
-        "error",
-        "unix",
-      ],
-      "lines-around-comment": "off",
-      "lines-around-directive": Array [
-        "error",
-        Object {
-          "after": "always",
-          "before": "always",
-        },
-      ],
-      "lines-between-class-members": Array [
-        "off",
-        "always",
-        Object {
-          "exceptAfterSingleLine": false,
-        },
-      ],
-      "max-depth": Array [
-        "off",
-        4,
-      ],
-      "max-len": Array [
-        "error",
-        100,
-        2,
-        Object {
-          "ignoreComments": false,
-          "ignoreRegExpLiterals": true,
-          "ignoreStrings": true,
-          "ignoreTemplateLiterals": true,
-          "ignoreUrls": true,
-        },
-      ],
-      "max-lines": Array [
-        "off",
-        Object {
-          "max": 300,
-          "skipBlankLines": true,
-          "skipComments": true,
-        },
-      ],
-      "max-nested-callbacks": "off",
-      "max-params": Array [
-        "off",
-        3,
-      ],
-      "max-statements": Array [
-        "off",
-        10,
-      ],
-      "max-statements-per-line": Array [
-        "off",
-        Object {
-          "max": 1,
-        },
-      ],
-      "multiline-comment-style": Array [
-        "off",
-        "starred-block",
-      ],
-      "multiline-ternary": Array [
-        "off",
-        "never",
-      ],
-      "new-cap": Array [
-        "error",
-        Object {
-          "capIsNew": false,
-          "capIsNewExceptions": Array [
-            "Immutable.Map",
-            "Immutable.Set",
-            "Immutable.List",
-          ],
-          "newIsCap": true,
-          "newIsCapExceptions": Array [],
-        },
-      ],
-      "new-parens": "error",
-      "newline-after-var": "off",
-      "newline-before-return": "off",
-      "newline-per-chained-call": Array [
-        "error",
-        Object {
-          "ignoreChainWithDepth": 4,
-        },
-      ],
-      "no-alert": "warn",
-      "no-array-constructor": "error",
-      "no-await-in-loop": "error",
-      "no-bitwise": "error",
-      "no-buffer-constructor": "error",
-      "no-caller": "error",
-      "no-case-declarations": "error",
-      "no-catch-shadow": "off",
-      "no-class-assign": "error",
-      "no-compare-neg-zero": "error",
-      "no-cond-assign": Array [
-        "error",
-        "always",
-      ],
-      "no-confusing-arrow": Array [
-        "error",
-        Object {
-          "allowParens": true,
-        },
-      ],
-      "no-console": "warn",
-      "no-const-assign": "error",
-      "no-constant-condition": "warn",
-      "no-continue": "error",
-      "no-control-regex": "error",
-      "no-debugger": "error",
-      "no-delete-var": "error",
-      "no-div-regex": "off",
-      "no-dupe-args": "error",
-      "no-dupe-class-members": "error",
-      "no-dupe-keys": "error",
-      "no-duplicate-case": "error",
-      "no-duplicate-imports": "off",
-      "no-else-return": Array [
-        "error",
-        Object {
-          "allowElseIf": true,
-        },
-      ],
-      "no-empty": "error",
-      "no-empty-character-class": "error",
-      "no-empty-function": Array [
-        "error",
-        Object {
-          "allow": Array [
-            "arrowFunctions",
-            "functions",
-            "methods",
-          ],
-        },
-      ],
-      "no-empty-pattern": "error",
-      "no-eq-null": "off",
-      "no-eval": "error",
-      "no-ex-assign": "error",
-      "no-extend-native": "error",
-      "no-extra-bind": "error",
-      "no-extra-boolean-cast": "error",
-      "no-extra-label": "error",
-      "no-extra-parens": Array [
-        "off",
-        "all",
-        Object {
-          "conditionalAssign": true,
-          "enforceForArrowConditionals": false,
-          "ignoreJSX": "all",
-          "nestedBinaryExpressions": false,
-          "returnAssign": false,
-        },
-      ],
-      "no-extra-semi": "error",
-      "no-fallthrough": "error",
-      "no-floating-decimal": "error",
-      "no-func-assign": "error",
-      "no-global-assign": Array [
-        "error",
-        Object {
-          "exceptions": Array [],
-        },
-      ],
-      "no-implicit-coercion": Array [
-        "off",
-        Object {
-          "allow": Array [],
-          "boolean": false,
-          "number": true,
-          "string": true,
-        },
-      ],
-      "no-implicit-globals": "off",
-      "no-implied-eval": "error",
-      "no-inline-comments": "off",
-      "no-inner-declarations": "error",
-      "no-invalid-regexp": "error",
-      "no-invalid-this": "off",
-      "no-irregular-whitespace": "error",
-      "no-iterator": "error",
-      "no-label-var": "error",
-      "no-labels": Array [
-        "error",
-        Object {
-          "allowLoop": false,
-          "allowSwitch": false,
-        },
-      ],
-      "no-lone-blocks": "error",
-      "no-lonely-if": "error",
-      "no-loop-func": "error",
-      "no-magic-numbers": Array [
-        "off",
-        Object {
-          "detectObjects": false,
-          "enforceConst": true,
-          "ignore": Array [],
-          "ignoreArrayIndexes": true,
-        },
-      ],
-      "no-mixed-operators": Array [
-        "error",
-        Object {
-          "allowSamePrecedence": false,
-          "groups": Array [
-            Array [
-              "+",
-              "-",
-              "*",
-              "/",
-              "%",
-              "**",
-            ],
-            Array [
-              "&",
-              "|",
-              "^",
-              "~",
-              "<<",
-              ">>",
-              ">>>",
-            ],
-            Array [
-              "==",
-              "!=",
-              "===",
-              "!==",
-              ">",
-              ">=",
-              "<",
-              "<=",
-            ],
-            Array [
-              "&&",
-              "||",
-            ],
-            Array [
-              "in",
-              "instanceof",
-            ],
-          ],
-        },
-      ],
-      "no-mixed-requires": Array [
-        "off",
-        false,
-      ],
-      "no-mixed-spaces-and-tabs": "error",
-      "no-multi-assign": Array [
-        "error",
-      ],
-      "no-multi-spaces": Array [
-        "error",
-        Object {
-          "ignoreEOLComments": false,
-        },
-      ],
-      "no-multi-str": "error",
-      "no-multiple-empty-lines": Array [
-        "error",
-        Object {
-          "max": 2,
-          "maxEOF": 1,
-        },
-      ],
-      "no-native-reassign": "off",
-      "no-negated-condition": "off",
-      "no-negated-in-lhs": "off",
-      "no-nested-ternary": "error",
-      "no-new": "error",
-      "no-new-func": "error",
-      "no-new-object": "error",
-      "no-new-require": "error",
-      "no-new-symbol": "error",
-      "no-new-wrappers": "error",
-      "no-obj-calls": "error",
-      "no-octal": "error",
-      "no-octal-escape": "error",
-      "no-param-reassign": Array [
-        "error",
-        Object {
-          "ignorePropertyModificationsFor": Array [
-            "acc",
-            "e",
-            "ctx",
-            "req",
-            "request",
-            "res",
-            "response",
-            "$scope",
-          ],
-          "props": true,
-        },
-      ],
-      "no-path-concat": "error",
-      "no-plusplus": "error",
-      "no-process-env": "off",
-      "no-process-exit": "off",
-      "no-proto": "error",
-      "no-prototype-builtins": "error",
-      "no-redeclare": "error",
-      "no-regex-spaces": "error",
-      "no-restricted-globals": Array [
-        "error",
-        "isFinite",
-        "isNaN",
-        "addEventListener",
-        "blur",
-        "close",
-        "closed",
-        "confirm",
-        "defaultStatus",
-        "event",
-        "external",
-        "defaultstatus",
-        "find",
-        "focus",
-        "frameElement",
-        "frames",
-        "history",
-        "innerHeight",
-        "innerWidth",
-        "length",
-        "location",
-        "locationbar",
-        "menubar",
-        "moveBy",
-        "moveTo",
-        "name",
-        "onblur",
-        "onerror",
-        "onfocus",
-        "onload",
-        "onresize",
-        "onunload",
-        "open",
-        "opener",
-        "opera",
-        "outerHeight",
-        "outerWidth",
-        "pageXOffset",
-        "pageYOffset",
-        "parent",
-        "print",
-        "removeEventListener",
-        "resizeBy",
-        "resizeTo",
-        "screen",
-        "screenLeft",
-        "screenTop",
-        "screenX",
-        "screenY",
-        "scroll",
-        "scrollbars",
-        "scrollBy",
-        "scrollTo",
-        "scrollX",
-        "scrollY",
-        "self",
-        "status",
-        "statusbar",
-        "stop",
-        "toolbar",
-        "top",
-      ],
-      "no-restricted-imports": "off",
-      "no-restricted-modules": "off",
-      "no-restricted-properties": Array [
-        "error",
-        Object {
-          "message": "arguments.callee is deprecated",
-          "object": "arguments",
-          "property": "callee",
-        },
-        Object {
-          "message": "Please use Number.isFinite instead",
-          "object": "global",
-          "property": "isFinite",
-        },
-        Object {
-          "message": "Please use Number.isFinite instead",
-          "object": "self",
-          "property": "isFinite",
-        },
-        Object {
-          "message": "Please use Number.isFinite instead",
-          "object": "window",
-          "property": "isFinite",
-        },
-        Object {
-          "message": "Please use Number.isNaN instead",
-          "object": "global",
-          "property": "isNaN",
-        },
-        Object {
-          "message": "Please use Number.isNaN instead",
-          "object": "self",
-          "property": "isNaN",
-        },
-        Object {
-          "message": "Please use Number.isNaN instead",
-          "object": "window",
-          "property": "isNaN",
-        },
-        Object {
-          "message": "Please use Object.defineProperty instead.",
-          "property": "__defineGetter__",
-        },
-        Object {
-          "message": "Please use Object.defineProperty instead.",
-          "property": "__defineSetter__",
-        },
-        Object {
-          "message": "Use the exponentiation operator (**) instead.",
-          "object": "Math",
-          "property": "pow",
-        },
-      ],
-      "no-restricted-syntax": Array [
-        "error",
-        Object {
-          "message": "for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.",
-          "selector": "ForInStatement",
-        },
-        Object {
-          "message": "iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.",
-          "selector": "ForOfStatement",
-        },
-        Object {
-          "message": "Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.",
-          "selector": "LabeledStatement",
-        },
-        Object {
-          "message": "\`with\` is disallowed in strict mode because it makes code impossible to predict and optimize.",
-          "selector": "WithStatement",
-        },
-      ],
-      "no-return-assign": Array [
-        "error",
-        "always",
-      ],
-      "no-return-await": "error",
-      "no-script-url": "error",
-      "no-self-assign": "error",
-      "no-self-compare": "error",
-      "no-sequences": "error",
-      "no-shadow": "error",
-      "no-shadow-restricted-names": "error",
-      "no-spaced-func": "error",
-      "no-sparse-arrays": "error",
-      "no-sync": "off",
-      "no-tabs": "error",
-      "no-template-curly-in-string": "error",
-      "no-ternary": "off",
-      "no-this-before-super": "error",
-      "no-throw-literal": "error",
-      "no-trailing-spaces": Array [
-        "error",
-        Object {
-          "ignoreComments": false,
-          "skipBlankLines": false,
-        },
-      ],
-      "no-undef": "error",
-      "no-undef-init": "error",
-      "no-undefined": "off",
-      "no-underscore-dangle": Array [
-        "error",
-        Object {
-          "allow": Array [],
-          "allowAfterSuper": false,
-          "allowAfterThis": false,
-          "enforceInMethodNames": false,
-        },
-      ],
-      "no-unexpected-multiline": "error",
-      "no-unmodified-loop-condition": "off",
-      "no-unneeded-ternary": Array [
-        "error",
-        Object {
-          "defaultAssignment": false,
-        },
-      ],
-      "no-unreachable": "error",
-      "no-unsafe-finally": "error",
-      "no-unsafe-negation": "error",
-      "no-unused-expressions": Array [
-        "error",
-        Object {
-          "allowShortCircuit": false,
-          "allowTaggedTemplates": false,
-          "allowTernary": false,
-        },
-      ],
-      "no-unused-labels": "error",
-      "no-unused-vars": Array [
-        "error",
-        Object {
-          "args": "after-used",
-          "ignoreRestSiblings": true,
-          "vars": "all",
-        },
-      ],
-      "no-use-before-define": Array [
-        "error",
-        Object {
-          "classes": true,
-          "functions": true,
-          "variables": true,
-        },
-      ],
-      "no-useless-call": "off",
-      "no-useless-computed-key": "error",
-      "no-useless-concat": "error",
-      "no-useless-constructor": "error",
-      "no-useless-escape": "error",
-      "no-useless-rename": Array [
-        "error",
-        Object {
-          "ignoreDestructuring": false,
-          "ignoreExport": false,
-          "ignoreImport": false,
-        },
-      ],
-      "no-useless-return": "error",
-      "no-var": "error",
-      "no-void": "error",
-      "no-warning-comments": Array [
-        "off",
-        Object {
-          "location": "start",
-          "terms": Array [
-            "todo",
-            "fixme",
-            "xxx",
-          ],
-        },
-      ],
-      "no-whitespace-before-property": "error",
-      "no-with": "error",
-      "nonblock-statement-body-position": "off",
-      "object-curly-newline": Array [
-        "error",
-        Object {
-          "ObjectExpression": Object {
-            "consistent": true,
-            "minProperties": 4,
-            "multiline": true,
-          },
-          "ObjectPattern": Object {
-            "consistent": true,
-            "minProperties": 4,
-            "multiline": true,
-          },
-        },
-      ],
-      "object-curly-spacing": Array [
-        "error",
-        "always",
-      ],
-      "object-property-newline": Array [
-        "error",
-        Object {
-          "allowMultiplePropertiesPerLine": true,
-        },
-      ],
-      "object-shorthand": Array [
-        "error",
-        "always",
-        Object {
-          "avoidQuotes": true,
-          "ignoreConstructors": false,
-        },
-      ],
-      "one-var": Array [
-        "error",
-        "never",
-      ],
-      "one-var-declaration-per-line": Array [
-        "error",
-        "always",
-      ],
-      "operator-assignment": Array [
-        "error",
-        "always",
-      ],
-      "operator-linebreak": "off",
-      "padded-blocks": Array [
-        "error",
-        Object {
-          "blocks": "never",
-          "classes": "never",
-          "switches": "never",
-        },
-      ],
-      "padding-line-between-statements": "off",
-      "prefer-arrow-callback": Array [
-        "error",
-        Object {
-          "allowNamedFunctions": false,
-          "allowUnboundThis": true,
-        },
-      ],
-      "prefer-const": Array [
-        "error",
-        Object {
-          "destructuring": "any",
-          "ignoreReadBeforeAssign": true,
-        },
-      ],
-      "prefer-destructuring": Array [
-        "error",
-        Object {
-          "AssignmentExpression": Object {
-            "array": true,
-            "object": true,
-          },
-          "VariableDeclarator": Object {
-            "array": false,
-            "object": true,
-          },
-        },
-        Object {
-          "enforceForRenamedProperties": false,
-        },
-      ],
-      "prefer-numeric-literals": "error",
-      "prefer-promise-reject-errors": Array [
-        "error",
-        Object {
-          "allowEmptyReject": true,
-        },
-      ],
-      "prefer-reflect": "off",
-      "prefer-rest-params": "error",
-      "prefer-spread": "error",
-      "prefer-template": "error",
-      "quote-props": Array [
-        "error",
-        "as-needed",
-        Object {
-          "keywords": false,
-          "numbers": false,
-          "unnecessary": true,
-        },
-      ],
-      "quotes": Array [
-        "error",
-        "single",
-        Object {
-          "avoidEscape": true,
-        },
-      ],
-      "radix": "error",
-      "require-await": "off",
-      "require-jsdoc": "off",
-      "require-yield": "error",
-      "rest-spread-spacing": Array [
-        "error",
-        "never",
-      ],
-      "semi": Array [
-        "error",
-        "always",
-      ],
-      "semi-spacing": Array [
-        "error",
-        Object {
-          "after": true,
-          "before": false,
-        },
-      ],
-      "semi-style": Array [
-        "error",
-        "last",
-      ],
-      "sort-imports": Array [
-        "off",
-        Object {
-          "ignoreCase": false,
-          "ignoreMemberSort": false,
-          "memberSyntaxSortOrder": Array [
-            "none",
-            "all",
-            "multiple",
-            "single",
-          ],
-        },
-      ],
-      "sort-keys": Array [
-        "off",
-        "asc",
-        Object {
-          "caseSensitive": false,
-          "natural": true,
-        },
-      ],
-      "sort-vars": "off",
-      "space-before-blocks": "error",
-      "space-before-function-paren": Array [
-        "error",
-        Object {
-          "anonymous": "always",
-          "asyncArrow": "always",
-          "named": "never",
-        },
-      ],
-      "space-in-parens": Array [
-        "error",
-        "never",
-      ],
-      "space-infix-ops": "error",
-      "space-unary-ops": Array [
-        "error",
-        Object {
-          "nonwords": false,
-          "overrides": Object {},
-          "words": true,
-        },
-      ],
-      "spaced-comment": Array [
-        "error",
-        "always",
-        Object {
-          "block": Object {
-            "balanced": true,
-            "exceptions": Array [
-              "-",
-              "+",
-            ],
-            "markers": Array [
-              "=",
-              "!",
-            ],
-          },
-          "line": Object {
-            "exceptions": Array [
-              "-",
-              "+",
-            ],
-            "markers": Array [
-              "=",
-              "!",
-            ],
-          },
-        },
-      ],
-      "strict": "error",
-      "switch-colon-spacing": Array [
-        "error",
-        Object {
-          "after": true,
-          "before": false,
-        },
-      ],
-      "symbol-description": "error",
-      "template-curly-spacing": "error",
-      "template-tag-spacing": Array [
-        "error",
-        "never",
-      ],
-      "unicode-bom": Array [
-        "error",
-        "never",
-      ],
-      "use-isnan": "error",
-      "valid-jsdoc": "off",
-      "valid-typeof": Array [
-        "error",
-        Object {
-          "requireStringLiterals": true,
-        },
-      ],
-      "vars-on-top": "error",
-      "wrap-iife": Array [
-        "error",
-        "outside",
-        Object {
-          "functionPrototypeMethods": false,
-        },
-      ],
-      "wrap-regex": "off",
-      "yield-star-spacing": Array [
-        "error",
-        "after",
-      ],
-      "yoda": "error",
-      "yola/import/default": "off",
-      "yola/import/export": "error",
-      "yola/import/extensions": Array [
-        "error",
-        "always",
-        Object {
-          "js": "never",
-          "jsx": "never",
-        },
-      ],
-      "yola/import/first": Array [
-        "error",
-        "absolute-first",
-      ],
-      "yola/import/imports-first": "off",
-      "yola/import/max-dependencies": Array [
-        "off",
-        Object {
-          "max": 10,
-        },
-      ],
-      "yola/import/named": "off",
-      "yola/import/namespace": "off",
-      "yola/import/newline-after-import": "error",
-      "yola/import/no-absolute-path": "error",
-      "yola/import/no-amd": "error",
-      "yola/import/no-anonymous-default-export": Array [
-        "off",
-        Object {
-          "allowAnonymousClass": false,
-          "allowAnonymousFunction": false,
-          "allowArray": false,
-          "allowArrowFunction": false,
-          "allowLiteral": false,
-          "allowObject": false,
-        },
-      ],
-      "yola/import/no-commonjs": "off",
-      "yola/import/no-deprecated": "off",
-      "yola/import/no-duplicates": "error",
-      "yola/import/no-dynamic-require": "error",
-      "yola/import/no-extraneous-dependencies": Array [
-        "error",
-        Object {
-          "devDependencies": Array [
-            "test/**",
-            "tests/**",
-            "spec/**",
-            "**/__tests__/**",
-            "test.{js,jsx}",
-            "test-*.{js,jsx}",
-            "**/*.{test,spec}.{js,jsx}",
-            "**/jest.config.js",
-            "**/webpack.config.js",
-            "**/webpack.config.*.js",
-            "**/rollup.config.js",
-            "**/rollup.config.*.js",
-            "**/gulpfile.js",
-            "**/gulpfile.*.js",
-            "**/Gruntfile{,.js}",
-            "**/protractor.conf.js",
-            "**/protractor.conf.*.js",
-          ],
-          "optionalDependencies": false,
-        },
-      ],
-      "yola/import/no-internal-modules": Array [
-        "off",
-        Object {
-          "allow": Array [],
-        },
-      ],
-      "yola/import/no-mutable-exports": "error",
-      "yola/import/no-named-as-default": "error",
-      "yola/import/no-named-as-default-member": "error",
-      "yola/import/no-named-default": "error",
-      "yola/import/no-namespace": "off",
-      "yola/import/no-nodejs-modules": "off",
-      "yola/import/no-restricted-paths": "off",
-      "yola/import/no-unassigned-import": "off",
-      "yola/import/no-unresolved": Array [
-        "error",
-        Object {
-          "caseSensitive": true,
-          "commonjs": true,
-        },
-      ],
-      "yola/import/no-webpack-loader-syntax": "error",
-      "yola/import/order": Array [
-        "off",
-        Object {
-          "groups": Array [
-            "builtin",
-            "external",
-            "internal",
-            "parent",
-            "sibling",
-            "index",
-          ],
-          "newlines-between": "never",
-        },
-      ],
-      "yola/import/prefer-default-export": "error",
-      "yola/import/unambiguous": "off",
+      "accessor-pairs": true,
+      "array-bracket-newline": true,
+      "array-bracket-spacing": true,
+      "array-callback-return": true,
+      "array-element-newline": true,
+      "arrow-body-style": true,
+      "arrow-parens": true,
+      "arrow-spacing": true,
+      "block-scoped-var": true,
+      "block-spacing": true,
+      "brace-style": true,
+      "callback-return": true,
+      "camelcase": true,
+      "capitalized-comments": true,
+      "class-methods-use-this": true,
+      "comma-dangle": true,
+      "comma-spacing": true,
+      "comma-style": true,
+      "complexity": true,
+      "computed-property-spacing": true,
+      "consistent-return": true,
+      "consistent-this": true,
+      "constructor-super": true,
+      "curly": true,
+      "default-case": true,
+      "dot-location": true,
+      "dot-notation": true,
+      "eol-last": true,
+      "eqeqeq": true,
+      "for-direction": true,
+      "func-call-spacing": true,
+      "func-name-matching": true,
+      "func-names": true,
+      "func-style": true,
+      "function-paren-newline": true,
+      "generator-star-spacing": true,
+      "getter-return": true,
+      "global-require": true,
+      "guard-for-in": true,
+      "handle-callback-err": true,
+      "id-blacklist": true,
+      "id-length": true,
+      "id-match": true,
+      "indent": true,
+      "init-declarations": true,
+      "jsx-quotes": true,
+      "key-spacing": true,
+      "keyword-spacing": true,
+      "line-comment-position": true,
+      "linebreak-style": true,
+      "lines-around-comment": true,
+      "lines-around-directive": true,
+      "lines-between-class-members": true,
+      "max-depth": true,
+      "max-len": true,
+      "max-lines": true,
+      "max-nested-callbacks": true,
+      "max-params": true,
+      "max-statements": true,
+      "max-statements-per-line": true,
+      "multiline-comment-style": true,
+      "multiline-ternary": true,
+      "new-cap": true,
+      "new-parens": true,
+      "newline-after-var": true,
+      "newline-before-return": true,
+      "newline-per-chained-call": true,
+      "no-alert": true,
+      "no-array-constructor": true,
+      "no-await-in-loop": true,
+      "no-bitwise": true,
+      "no-buffer-constructor": true,
+      "no-caller": true,
+      "no-case-declarations": true,
+      "no-catch-shadow": true,
+      "no-class-assign": true,
+      "no-compare-neg-zero": true,
+      "no-cond-assign": true,
+      "no-confusing-arrow": true,
+      "no-console": true,
+      "no-const-assign": true,
+      "no-constant-condition": true,
+      "no-continue": true,
+      "no-control-regex": true,
+      "no-debugger": true,
+      "no-delete-var": true,
+      "no-div-regex": true,
+      "no-dupe-args": true,
+      "no-dupe-class-members": true,
+      "no-dupe-keys": true,
+      "no-duplicate-case": true,
+      "no-duplicate-imports": true,
+      "no-else-return": true,
+      "no-empty": true,
+      "no-empty-character-class": true,
+      "no-empty-function": true,
+      "no-empty-pattern": true,
+      "no-eq-null": true,
+      "no-eval": true,
+      "no-ex-assign": true,
+      "no-extend-native": true,
+      "no-extra-bind": true,
+      "no-extra-boolean-cast": true,
+      "no-extra-label": true,
+      "no-extra-parens": true,
+      "no-extra-semi": true,
+      "no-fallthrough": true,
+      "no-floating-decimal": true,
+      "no-func-assign": true,
+      "no-global-assign": true,
+      "no-implicit-coercion": true,
+      "no-implicit-globals": true,
+      "no-implied-eval": true,
+      "no-inline-comments": true,
+      "no-inner-declarations": true,
+      "no-invalid-regexp": true,
+      "no-invalid-this": true,
+      "no-irregular-whitespace": true,
+      "no-iterator": true,
+      "no-label-var": true,
+      "no-labels": true,
+      "no-lone-blocks": true,
+      "no-lonely-if": true,
+      "no-loop-func": true,
+      "no-magic-numbers": true,
+      "no-mixed-operators": true,
+      "no-mixed-requires": true,
+      "no-mixed-spaces-and-tabs": true,
+      "no-multi-assign": true,
+      "no-multi-spaces": true,
+      "no-multi-str": true,
+      "no-multiple-empty-lines": true,
+      "no-native-reassign": true,
+      "no-negated-condition": true,
+      "no-negated-in-lhs": true,
+      "no-nested-ternary": true,
+      "no-new": true,
+      "no-new-func": true,
+      "no-new-object": true,
+      "no-new-require": true,
+      "no-new-symbol": true,
+      "no-new-wrappers": true,
+      "no-obj-calls": true,
+      "no-octal": true,
+      "no-octal-escape": true,
+      "no-param-reassign": true,
+      "no-path-concat": true,
+      "no-plusplus": true,
+      "no-process-env": true,
+      "no-process-exit": true,
+      "no-proto": true,
+      "no-prototype-builtins": true,
+      "no-redeclare": true,
+      "no-regex-spaces": true,
+      "no-restricted-globals": true,
+      "no-restricted-imports": true,
+      "no-restricted-modules": true,
+      "no-restricted-properties": true,
+      "no-restricted-syntax": true,
+      "no-return-assign": true,
+      "no-return-await": true,
+      "no-script-url": true,
+      "no-self-assign": true,
+      "no-self-compare": true,
+      "no-sequences": true,
+      "no-shadow": true,
+      "no-shadow-restricted-names": true,
+      "no-spaced-func": true,
+      "no-sparse-arrays": true,
+      "no-sync": true,
+      "no-tabs": true,
+      "no-template-curly-in-string": true,
+      "no-ternary": true,
+      "no-this-before-super": true,
+      "no-throw-literal": true,
+      "no-trailing-spaces": true,
+      "no-undef": true,
+      "no-undef-init": true,
+      "no-undefined": true,
+      "no-underscore-dangle": true,
+      "no-unexpected-multiline": true,
+      "no-unmodified-loop-condition": true,
+      "no-unneeded-ternary": true,
+      "no-unreachable": true,
+      "no-unsafe-finally": true,
+      "no-unsafe-negation": true,
+      "no-unused-expressions": true,
+      "no-unused-labels": true,
+      "no-unused-vars": true,
+      "no-use-before-define": true,
+      "no-useless-call": true,
+      "no-useless-computed-key": true,
+      "no-useless-concat": true,
+      "no-useless-constructor": true,
+      "no-useless-escape": true,
+      "no-useless-rename": true,
+      "no-useless-return": true,
+      "no-var": true,
+      "no-void": true,
+      "no-warning-comments": true,
+      "no-whitespace-before-property": true,
+      "no-with": true,
+      "nonblock-statement-body-position": true,
+      "object-curly-newline": true,
+      "object-curly-spacing": true,
+      "object-property-newline": true,
+      "object-shorthand": true,
+      "one-var": true,
+      "one-var-declaration-per-line": true,
+      "operator-assignment": true,
+      "operator-linebreak": true,
+      "padded-blocks": true,
+      "padding-line-between-statements": true,
+      "prefer-arrow-callback": true,
+      "prefer-const": true,
+      "prefer-destructuring": true,
+      "prefer-numeric-literals": true,
+      "prefer-promise-reject-errors": true,
+      "prefer-reflect": true,
+      "prefer-rest-params": true,
+      "prefer-spread": true,
+      "prefer-template": true,
+      "quote-props": true,
+      "quotes": true,
+      "radix": true,
+      "require-await": true,
+      "require-jsdoc": true,
+      "require-yield": true,
+      "rest-spread-spacing": true,
+      "semi": true,
+      "semi-spacing": true,
+      "semi-style": true,
+      "sort-imports": true,
+      "sort-keys": true,
+      "sort-vars": true,
+      "space-before-blocks": true,
+      "space-before-function-paren": true,
+      "space-in-parens": true,
+      "space-infix-ops": true,
+      "space-unary-ops": true,
+      "spaced-comment": true,
+      "strict": true,
+      "switch-colon-spacing": true,
+      "symbol-description": true,
+      "template-curly-spacing": true,
+      "template-tag-spacing": true,
+      "unicode-bom": true,
+      "use-isnan": true,
+      "valid-jsdoc": true,
+      "valid-typeof": true,
+      "vars-on-top": true,
+      "wrap-iife": true,
+      "wrap-regex": true,
+      "yield-star-spacing": true,
+      "yoda": true,
+      "yola/import/default": true,
+      "yola/import/export": true,
+      "yola/import/extensions": true,
+      "yola/import/first": true,
+      "yola/import/imports-first": true,
+      "yola/import/max-dependencies": true,
+      "yola/import/named": true,
+      "yola/import/namespace": true,
+      "yola/import/newline-after-import": true,
+      "yola/import/no-absolute-path": true,
+      "yola/import/no-amd": true,
+      "yola/import/no-anonymous-default-export": true,
+      "yola/import/no-commonjs": true,
+      "yola/import/no-deprecated": true,
+      "yola/import/no-duplicates": true,
+      "yola/import/no-dynamic-require": true,
+      "yola/import/no-extraneous-dependencies": true,
+      "yola/import/no-internal-modules": true,
+      "yola/import/no-mutable-exports": true,
+      "yola/import/no-named-as-default": true,
+      "yola/import/no-named-as-default-member": true,
+      "yola/import/no-named-default": true,
+      "yola/import/no-namespace": true,
+      "yola/import/no-nodejs-modules": true,
+      "yola/import/no-restricted-paths": true,
+      "yola/import/no-unassigned-import": true,
+      "yola/import/no-unresolved": true,
+      "yola/import/no-webpack-loader-syntax": true,
+      "yola/import/order": true,
+      "yola/import/prefer-default-export": true,
+      "yola/import/unambiguous": true,
     },
     "settings": Object {
       "import/core-modules": Array [],
@@ -1187,7 +329,7 @@ Object {
     },
   },
   "react": Object {
-    "parser": "/home/rusinov/yola/eslint-plugin-yola/node_modules/babel-eslint/index.js",
+    "parser": true,
     "parserOptions": Object {
       "ecmaFeatures": Object {
         "experimentalObjectRestSpread": true,
@@ -1200,476 +342,109 @@ Object {
       "yola",
     ],
     "rules": Object {
-      "class-methods-use-this": Array [
-        "error",
-        Object {
-          "exceptMethods": Array [
-            "render",
-            "getInitialState",
-            "getDefaultProps",
-            "getChildContext",
-            "componentWillMount",
-            "componentDidMount",
-            "componentWillReceiveProps",
-            "shouldComponentUpdate",
-            "componentWillUpdate",
-            "componentDidUpdate",
-            "componentWillUnmount",
-          ],
-        },
-      ],
-      "jsx-quotes": Array [
-        "error",
-        "prefer-double",
-      ],
-      "strict": Array [
-        "error",
-        "never",
-      ],
-      "yola/jsx-a11y/accessible-emoji": "error",
-      "yola/jsx-a11y/alt-text": Array [
-        "error",
-        Object {
-          "area": Array [],
-          "elements": Array [
-            "img",
-            "object",
-            "area",
-            "input[type=\\"image\\"]",
-          ],
-          "img": Array [],
-          "input[type=\\"image\\"]": Array [],
-          "object": Array [],
-        },
-      ],
-      "yola/jsx-a11y/anchor-has-content": Array [
-        "error",
-        Object {
-          "components": Array [],
-        },
-      ],
-      "yola/jsx-a11y/anchor-is-valid": Array [
-        "error",
-        Object {
-          "aspects": Array [
-            "noHref",
-            "invalidHref",
-            "preferButton",
-          ],
-          "components": Array [
-            "Link",
-          ],
-          "specialLink": Array [],
-        },
-      ],
-      "yola/jsx-a11y/aria-activedescendant-has-tabindex": "error",
-      "yola/jsx-a11y/aria-props": "error",
-      "yola/jsx-a11y/aria-proptypes": "error",
-      "yola/jsx-a11y/aria-role": Array [
-        "error",
-        Object {
-          "ignoreNonDom": false,
-        },
-      ],
-      "yola/jsx-a11y/aria-unsupported-elements": "error",
-      "yola/jsx-a11y/click-events-have-key-events": "error",
-      "yola/jsx-a11y/heading-has-content": Array [
-        "error",
-        Object {
-          "components": Array [
-            "",
-          ],
-        },
-      ],
-      "yola/jsx-a11y/html-has-lang": "error",
-      "yola/jsx-a11y/iframe-has-title": "error",
-      "yola/jsx-a11y/img-redundant-alt": "error",
-      "yola/jsx-a11y/interactive-supports-focus": "error",
-      "yola/jsx-a11y/label-has-for": Array [
-        "error",
-        Object {
-          "components": Array [
-            "label",
-          ],
-        },
-      ],
-      "yola/jsx-a11y/lang": "error",
-      "yola/jsx-a11y/media-has-caption": Array [
-        "error",
-        Object {
-          "audio": Array [],
-          "track": Array [],
-          "video": Array [],
-        },
-      ],
-      "yola/jsx-a11y/mouse-events-have-key-events": "error",
-      "yola/jsx-a11y/no-access-key": "error",
-      "yola/jsx-a11y/no-autofocus": Array [
-        "error",
-        Object {
-          "ignoreNonDOM": true,
-        },
-      ],
-      "yola/jsx-a11y/no-distracting-elements": Array [
-        "error",
-        Object {
-          "elements": Array [
-            "marquee",
-            "blink",
-          ],
-        },
-      ],
-      "yola/jsx-a11y/no-interactive-element-to-noninteractive-role": Array [
-        "error",
-        Object {
-          "tr": Array [
-            "none",
-            "presentation",
-          ],
-        },
-      ],
-      "yola/jsx-a11y/no-noninteractive-element-interactions": Array [
-        "error",
-        Object {
-          "handlers": Array [
-            "onClick",
-            "onMouseDown",
-            "onMouseUp",
-            "onKeyPress",
-            "onKeyDown",
-            "onKeyUp",
-          ],
-        },
-      ],
-      "yola/jsx-a11y/no-noninteractive-element-to-interactive-role": Array [
-        "error",
-        Object {
-          "li": Array [
-            "menuitem",
-            "option",
-            "row",
-            "tab",
-            "treeitem",
-          ],
-          "ol": Array [
-            "listbox",
-            "menu",
-            "menubar",
-            "radiogroup",
-            "tablist",
-            "tree",
-            "treegrid",
-          ],
-          "table": Array [
-            "grid",
-          ],
-          "td": Array [
-            "gridcell",
-          ],
-          "ul": Array [
-            "listbox",
-            "menu",
-            "menubar",
-            "radiogroup",
-            "tablist",
-            "tree",
-            "treegrid",
-          ],
-        },
-      ],
-      "yola/jsx-a11y/no-noninteractive-tabindex": Array [
-        "error",
-        Object {
-          "roles": Array [
-            "tabpanel",
-          ],
-          "tags": Array [],
-        },
-      ],
-      "yola/jsx-a11y/no-onchange": "off",
-      "yola/jsx-a11y/no-redundant-roles": "error",
-      "yola/jsx-a11y/no-static-element-interactions": Array [
-        "error",
-        Object {
-          "handlers": Array [
-            "onClick",
-            "onMouseDown",
-            "onMouseUp",
-            "onKeyPress",
-            "onKeyDown",
-            "onKeyUp",
-          ],
-        },
-      ],
-      "yola/jsx-a11y/role-has-required-aria-props": "error",
-      "yola/jsx-a11y/role-supports-aria-props": "error",
-      "yola/jsx-a11y/scope": "error",
-      "yola/jsx-a11y/tabindex-no-positive": "error",
-      "yola/react/boolean-prop-naming": Array [
-        "off",
-        Object {
-          "propTypeNames": Array [
-            "bool",
-            "mutuallyExclusiveTrueProps",
-          ],
-          "rule": "^(is|has)[A-Z]([A-Za-z0-9]?)+",
-        },
-      ],
-      "yola/react/default-props-match-prop-types": Array [
-        "error",
-        Object {
-          "allowRequiredDefaults": false,
-        },
-      ],
-      "yola/react/display-name": Array [
-        "off",
-        Object {
-          "ignoreTranspilerName": false,
-        },
-      ],
-      "yola/react/forbid-component-props": Array [
-        "off",
-        Object {
-          "forbid": Array [],
-        },
-      ],
-      "yola/react/forbid-elements": Array [
-        "off",
-        Object {
-          "forbid": Array [],
-        },
-      ],
-      "yola/react/forbid-foreign-prop-types": "off",
-      "yola/react/forbid-prop-types": Array [
-        "error",
-        Object {
-          "forbid": Array [
-            "any",
-            "array",
-            "object",
-          ],
-        },
-      ],
-      "yola/react/jsx-boolean-value": Array [
-        "error",
-        "never",
-        Object {
-          "always": Array [],
-        },
-      ],
-      "yola/react/jsx-closing-bracket-location": Array [
-        "error",
-        "line-aligned",
-      ],
-      "yola/react/jsx-closing-tag-location": "error",
-      "yola/react/jsx-curly-brace-presence": Array [
-        "error",
-        Object {
-          "children": "never",
-          "props": "never",
-        },
-      ],
-      "yola/react/jsx-curly-spacing": Array [
-        "error",
-        "never",
-        Object {
-          "allowMultiline": true,
-        },
-      ],
-      "yola/react/jsx-equals-spacing": Array [
-        "error",
-        "never",
-      ],
-      "yola/react/jsx-filename-extension": Array [
-        "error",
-        Object {
-          "extensions": Array [
-            ".jsx",
-          ],
-        },
-      ],
-      "yola/react/jsx-first-prop-new-line": Array [
-        "error",
-        "multiline-multiprop",
-      ],
-      "yola/react/jsx-handler-names": Array [
-        "off",
-        Object {
-          "eventHandlerPrefix": "handle",
-          "eventHandlerPropPrefix": "on",
-        },
-      ],
-      "yola/react/jsx-indent": Array [
-        "error",
-        2,
-      ],
-      "yola/react/jsx-indent-props": Array [
-        "error",
-        2,
-      ],
-      "yola/react/jsx-key": "off",
-      "yola/react/jsx-max-props-per-line": Array [
-        "error",
-        Object {
-          "maximum": 1,
-          "when": "multiline",
-        },
-      ],
-      "yola/react/jsx-no-bind": Array [
-        "error",
-        Object {
-          "allowArrowFunctions": true,
-          "allowBind": false,
-          "ignoreRefs": true,
-        },
-      ],
-      "yola/react/jsx-no-comment-textnodes": "error",
-      "yola/react/jsx-no-duplicate-props": Array [
-        "error",
-        Object {
-          "ignoreCase": true,
-        },
-      ],
-      "yola/react/jsx-no-literals": Array [
-        "off",
-        Object {
-          "noStrings": true,
-        },
-      ],
-      "yola/react/jsx-no-target-blank": "error",
-      "yola/react/jsx-no-undef": "error",
-      "yola/react/jsx-pascal-case": Array [
-        "error",
-        Object {
-          "allowAllCaps": true,
-          "ignore": Array [],
-        },
-      ],
-      "yola/react/jsx-sort-prop-types": "off",
-      "yola/react/jsx-sort-props": Array [
-        "off",
-        Object {
-          "callbacksLast": false,
-          "ignoreCase": true,
-          "noSortAlphabetically": false,
-          "reservedFirst": true,
-          "shorthandFirst": false,
-          "shorthandLast": false,
-        },
-      ],
-      "yola/react/jsx-space-before-closing": Array [
-        "off",
-        "always",
-      ],
-      "yola/react/jsx-tag-spacing": Array [
-        "error",
-        Object {
-          "afterOpening": "never",
-          "beforeSelfClosing": "always",
-          "closingSlash": "never",
-        },
-      ],
-      "yola/react/jsx-uses-react": Array [
-        "error",
-      ],
-      "yola/react/jsx-uses-vars": "error",
-      "yola/react/jsx-wrap-multilines": Array [
-        "error",
-        Object {
-          "arrow": true,
-          "assignment": true,
-          "declaration": true,
-          "return": true,
-        },
-      ],
-      "yola/react/no-array-index-key": "error",
-      "yola/react/no-children-prop": "error",
-      "yola/react/no-danger": "warn",
-      "yola/react/no-danger-with-children": "error",
-      "yola/react/no-deprecated": Array [
-        "error",
-      ],
-      "yola/react/no-did-mount-set-state": "error",
-      "yola/react/no-did-update-set-state": "error",
-      "yola/react/no-direct-mutation-state": "off",
-      "yola/react/no-find-dom-node": "error",
-      "yola/react/no-is-mounted": "error",
-      "yola/react/no-multi-comp": Array [
-        "error",
-        Object {
-          "ignoreStateless": true,
-        },
-      ],
-      "yola/react/no-redundant-should-component-update": "error",
-      "yola/react/no-render-return-value": "error",
-      "yola/react/no-set-state": "off",
-      "yola/react/no-string-refs": "error",
-      "yola/react/no-typos": "error",
-      "yola/react/no-unescaped-entities": "error",
-      "yola/react/no-unknown-property": "error",
-      "yola/react/no-unused-prop-types": Array [
-        "error",
-        Object {
-          "customValidators": Array [],
-          "skipShapeProps": true,
-        },
-      ],
-      "yola/react/no-unused-state": "error",
-      "yola/react/no-will-update-set-state": "error",
-      "yola/react/prefer-es6-class": Array [
-        "error",
-        "always",
-      ],
-      "yola/react/prefer-stateless-function": Array [
-        "error",
-        Object {
-          "ignorePureComponents": true,
-        },
-      ],
-      "yola/react/prop-types": Array [
-        "error",
-        Object {
-          "customValidators": Array [],
-          "ignore": Array [],
-          "skipUndeclared": false,
-        },
-      ],
-      "yola/react/react-in-jsx-scope": "error",
-      "yola/react/require-default-props": "error",
-      "yola/react/require-optimization": Array [
-        "off",
-        Object {
-          "allowDecorators": Array [],
-        },
-      ],
-      "yola/react/require-render-return": "error",
-      "yola/react/self-closing-comp": "error",
-      "yola/react/sort-comp": Array [
-        "error",
-        Object {
-          "order": Array [
-            "static-methods",
-            "lifecycle",
-            "/^on.+$/",
-            "getters",
-            "setters",
-            "/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/",
-            "everything-else",
-            "/^render.+$/",
-            "render",
-          ],
-        },
-      ],
-      "yola/react/sort-prop-types": Array [
-        "off",
-        Object {
-          "callbacksLast": false,
-          "ignoreCase": true,
-          "requiredFirst": false,
-        },
-      ],
-      "yola/react/style-prop-object": "error",
-      "yola/react/void-dom-elements-no-children": "error",
+      "class-methods-use-this": true,
+      "jsx-quotes": true,
+      "strict": true,
+      "yola/jsx-a11y/accessible-emoji": true,
+      "yola/jsx-a11y/alt-text": true,
+      "yola/jsx-a11y/anchor-has-content": true,
+      "yola/jsx-a11y/anchor-is-valid": true,
+      "yola/jsx-a11y/aria-activedescendant-has-tabindex": true,
+      "yola/jsx-a11y/aria-props": true,
+      "yola/jsx-a11y/aria-proptypes": true,
+      "yola/jsx-a11y/aria-role": true,
+      "yola/jsx-a11y/aria-unsupported-elements": true,
+      "yola/jsx-a11y/click-events-have-key-events": true,
+      "yola/jsx-a11y/heading-has-content": true,
+      "yola/jsx-a11y/html-has-lang": true,
+      "yola/jsx-a11y/iframe-has-title": true,
+      "yola/jsx-a11y/img-redundant-alt": true,
+      "yola/jsx-a11y/interactive-supports-focus": true,
+      "yola/jsx-a11y/label-has-for": true,
+      "yola/jsx-a11y/lang": true,
+      "yola/jsx-a11y/media-has-caption": true,
+      "yola/jsx-a11y/mouse-events-have-key-events": true,
+      "yola/jsx-a11y/no-access-key": true,
+      "yola/jsx-a11y/no-autofocus": true,
+      "yola/jsx-a11y/no-distracting-elements": true,
+      "yola/jsx-a11y/no-interactive-element-to-noninteractive-role": true,
+      "yola/jsx-a11y/no-noninteractive-element-interactions": true,
+      "yola/jsx-a11y/no-noninteractive-element-to-interactive-role": true,
+      "yola/jsx-a11y/no-noninteractive-tabindex": true,
+      "yola/jsx-a11y/no-onchange": true,
+      "yola/jsx-a11y/no-redundant-roles": true,
+      "yola/jsx-a11y/no-static-element-interactions": true,
+      "yola/jsx-a11y/role-has-required-aria-props": true,
+      "yola/jsx-a11y/role-supports-aria-props": true,
+      "yola/jsx-a11y/scope": true,
+      "yola/jsx-a11y/tabindex-no-positive": true,
+      "yola/react/boolean-prop-naming": true,
+      "yola/react/default-props-match-prop-types": true,
+      "yola/react/display-name": true,
+      "yola/react/forbid-component-props": true,
+      "yola/react/forbid-elements": true,
+      "yola/react/forbid-foreign-prop-types": true,
+      "yola/react/forbid-prop-types": true,
+      "yola/react/jsx-boolean-value": true,
+      "yola/react/jsx-closing-bracket-location": true,
+      "yola/react/jsx-closing-tag-location": true,
+      "yola/react/jsx-curly-brace-presence": true,
+      "yola/react/jsx-curly-spacing": true,
+      "yola/react/jsx-equals-spacing": true,
+      "yola/react/jsx-filename-extension": true,
+      "yola/react/jsx-first-prop-new-line": true,
+      "yola/react/jsx-handler-names": true,
+      "yola/react/jsx-indent": true,
+      "yola/react/jsx-indent-props": true,
+      "yola/react/jsx-key": true,
+      "yola/react/jsx-max-props-per-line": true,
+      "yola/react/jsx-no-bind": true,
+      "yola/react/jsx-no-comment-textnodes": true,
+      "yola/react/jsx-no-duplicate-props": true,
+      "yola/react/jsx-no-literals": true,
+      "yola/react/jsx-no-target-blank": true,
+      "yola/react/jsx-no-undef": true,
+      "yola/react/jsx-pascal-case": true,
+      "yola/react/jsx-sort-prop-types": true,
+      "yola/react/jsx-sort-props": true,
+      "yola/react/jsx-space-before-closing": true,
+      "yola/react/jsx-tag-spacing": true,
+      "yola/react/jsx-uses-react": true,
+      "yola/react/jsx-uses-vars": true,
+      "yola/react/jsx-wrap-multilines": true,
+      "yola/react/no-array-index-key": true,
+      "yola/react/no-children-prop": true,
+      "yola/react/no-danger": true,
+      "yola/react/no-danger-with-children": true,
+      "yola/react/no-deprecated": true,
+      "yola/react/no-did-mount-set-state": true,
+      "yola/react/no-did-update-set-state": true,
+      "yola/react/no-direct-mutation-state": true,
+      "yola/react/no-find-dom-node": true,
+      "yola/react/no-is-mounted": true,
+      "yola/react/no-multi-comp": true,
+      "yola/react/no-redundant-should-component-update": true,
+      "yola/react/no-render-return-value": true,
+      "yola/react/no-set-state": true,
+      "yola/react/no-string-refs": true,
+      "yola/react/no-typos": true,
+      "yola/react/no-unescaped-entities": true,
+      "yola/react/no-unknown-property": true,
+      "yola/react/no-unused-prop-types": true,
+      "yola/react/no-unused-state": true,
+      "yola/react/no-will-update-set-state": true,
+      "yola/react/prefer-es6-class": true,
+      "yola/react/prefer-stateless-function": true,
+      "yola/react/prop-types": true,
+      "yola/react/react-in-jsx-scope": true,
+      "yola/react/require-default-props": true,
+      "yola/react/require-optimization": true,
+      "yola/react/require-render-return": true,
+      "yola/react/self-closing-comp": true,
+      "yola/react/sort-comp": true,
+      "yola/react/sort-prop-types": true,
+      "yola/react/style-prop-object": true,
+      "yola/react/void-dom-elements-no-children": true,
     },
     "settings": Object {
       "import/resolver": Object {
@@ -1695,2734 +470,138 @@ Object {
 }
 `;
 
-exports[`Plugin must contain configs and rules properties 2`] = `
+exports[`eslint-plugin-yola must contain configs and rules properties 2`] = `
 Object {
-  "import/default": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-    },
-  },
-  "import/export": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-    },
-  },
-  "import/exports-last": Object {
-    "create": [Function],
-  },
-  "import/extensions": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Object {
-        "anyOf": Array [
-          Object {
-            "additionalItems": false,
-            "items": Array [
-              Object {
-                "enum": Array [
-                  "always",
-                  "never",
-                ],
-              },
-            ],
-            "type": "array",
-          },
-          Object {
-            "additionalItems": false,
-            "items": Array [
-              Object {
-                "patternProperties": Object {
-                  ".*": Object {
-                    "enum": Array [
-                      "always",
-                      "never",
-                    ],
-                  },
-                },
-                "type": "object",
-              },
-            ],
-            "type": "array",
-          },
-          Object {
-            "additionalItems": false,
-            "items": Array [
-              Object {
-                "enum": Array [
-                  "always",
-                  "never",
-                ],
-              },
-              Object {
-                "patternProperties": Object {
-                  ".*": Object {
-                    "enum": Array [
-                      "always",
-                      "never",
-                    ],
-                  },
-                },
-                "type": "object",
-              },
-            ],
-            "type": "array",
-          },
-        ],
-      },
-    },
-  },
-  "import/first": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-    },
-  },
-  "import/imports-first": Object {
-    "create": [Function],
-    "meta": Object {
-      "deprecated": true,
-      "docs": Object {},
-    },
-  },
-  "import/max-dependencies": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "max": Object {
-              "type": "number",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "import/named": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-    },
-  },
-  "import/namespace": Object {
-    "create": [Function],
-    "meta": Object {
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "allowComputed": Object {
-              "default": false,
-              "description": "If \`false\`, will report computed (and thus, un-lintable) references to namespace members.",
-              "type": "boolean",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "import/newline-after-import": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "fixable": "whitespace",
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "count": Object {
-              "minimum": 1,
-              "type": "integer",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "import/no-absolute-path": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "amd": Object {
-              "type": "boolean",
-            },
-            "commonjs": Object {
-              "type": "boolean",
-            },
-            "esmodule": Object {
-              "type": "boolean",
-            },
-            "ignore": Object {
-              "items": Object {
-                "type": "string",
-              },
-              "minItems": 1,
-              "type": "array",
-              "uniqueItems": true,
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "import/no-amd": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-    },
-  },
-  "import/no-anonymous-default-export": Object {
-    "create": [Function],
-    "meta": Object {
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "allowAnonymousClass": Object {
-              "default": false,
-              "description": "If \`false\`, will report default export of an anonymous class",
-              "type": "boolean",
-            },
-            "allowAnonymousFunction": Object {
-              "default": false,
-              "description": "If \`false\`, will report default export of an anonymous function",
-              "type": "boolean",
-            },
-            "allowArray": Object {
-              "default": false,
-              "description": "If \`false\`, will report default export of an array",
-              "type": "boolean",
-            },
-            "allowArrowFunction": Object {
-              "default": false,
-              "description": "If \`false\`, will report default export of an arrow function",
-              "type": "boolean",
-            },
-            "allowLiteral": Object {
-              "default": false,
-              "description": "If \`false\`, will report default export of a literal",
-              "type": "boolean",
-            },
-            "allowObject": Object {
-              "default": false,
-              "description": "If \`false\`, will report default export of an object expression",
-              "type": "boolean",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "import/no-commonjs": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-    },
-  },
-  "import/no-deprecated": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-    },
-  },
-  "import/no-duplicates": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-    },
-  },
-  "import/no-dynamic-require": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-    },
-  },
-  "import/no-extraneous-dependencies": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "devDependencies": Object {
-              "type": Array [
-                "boolean",
-                "array",
-              ],
-            },
-            "optionalDependencies": Object {
-              "type": Array [
-                "boolean",
-                "array",
-              ],
-            },
-            "packageDir": Object {
-              "type": "string",
-            },
-            "peerDependencies": Object {
-              "type": Array [
-                "boolean",
-                "array",
-              ],
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "import/no-internal-modules": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "allow": Object {
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "import/no-mutable-exports": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-    },
-  },
-  "import/no-named-as-default": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-    },
-  },
-  "import/no-named-as-default-member": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-    },
-  },
-  "import/no-named-default": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-    },
-  },
-  "import/no-namespace": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-    },
-  },
-  "import/no-nodejs-modules": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-    },
-  },
-  "import/no-restricted-paths": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "basePath": Object {
-              "type": "string",
-            },
-            "zones": Object {
-              "items": Object {
-                "additionalProperties": false,
-                "properties": Object {
-                  "from": Object {
-                    "type": "string",
-                  },
-                  "target": Object {
-                    "type": "string",
-                  },
-                },
-                "type": "object",
-              },
-              "minItems": 1,
-              "type": "array",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "import/no-unassigned-import": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "allow": Object {
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-            },
-            "devDependencies": Object {
-              "type": Array [
-                "boolean",
-                "array",
-              ],
-            },
-            "optionalDependencies": Object {
-              "type": Array [
-                "boolean",
-                "array",
-              ],
-            },
-            "peerDependencies": Object {
-              "type": Array [
-                "boolean",
-                "array",
-              ],
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "import/no-unresolved": Object {
-    "create": [Function],
-    "meta": Object {
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "amd": Object {
-              "type": "boolean",
-            },
-            "caseSensitive": Object {
-              "default": true,
-              "type": "boolean",
-            },
-            "commonjs": Object {
-              "type": "boolean",
-            },
-            "esmodule": Object {
-              "type": "boolean",
-            },
-            "ignore": Object {
-              "items": Object {
-                "type": "string",
-              },
-              "minItems": 1,
-              "type": "array",
-              "uniqueItems": true,
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "import/no-webpack-loader-syntax": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-    },
-  },
-  "import/order": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "groups": Object {
-              "type": "array",
-            },
-            "newlines-between": Object {
-              "enum": Array [
-                "ignore",
-                "always",
-                "always-and-inside-groups",
-                "never",
-              ],
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "import/prefer-default-export": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-    },
-  },
-  "import/unambiguous": Object {
-    "create": [Function],
-    "meta": Object {},
-  },
-  "jsx-a11y/accessible-emoji": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {},
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/alt-text": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {
-            "area": Object {
-              "additionalItems": false,
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-              "uniqueItems": true,
-            },
-            "elements": Object {
-              "additionalItems": false,
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-              "uniqueItems": true,
-            },
-            "img": Object {
-              "additionalItems": false,
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-              "uniqueItems": true,
-            },
-            "input[type=\\"image\\"]": Object {
-              "additionalItems": false,
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-              "uniqueItems": true,
-            },
-            "object": Object {
-              "additionalItems": false,
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-              "uniqueItems": true,
-            },
-          },
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/anchor-has-content": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {
-            "components": Object {
-              "additionalItems": false,
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-              "uniqueItems": true,
-            },
-          },
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/anchor-is-valid": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {
-            "aspects": Object {
-              "additionalItems": false,
-              "items": Object {
-                "enum": Array [
-                  "noHref",
-                  "invalidHref",
-                  "preferButton",
-                ],
-                "type": "string",
-              },
-              "minItems": 1,
-              "type": "array",
-              "uniqueItems": true,
-            },
-            "components": Object {
-              "additionalItems": false,
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-              "uniqueItems": true,
-            },
-            "specialLink": Object {
-              "additionalItems": false,
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-              "uniqueItems": true,
-            },
-          },
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/aria-activedescendant-has-tabindex": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {},
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/aria-props": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {},
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/aria-proptypes": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {},
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-    "validityCheck": [Function],
-  },
-  "jsx-a11y/aria-role": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {
-            "ignoreNonDOM": Object {
-              "default": false,
-              "type": "boolean",
-            },
-          },
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/aria-unsupported-elements": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {},
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/click-events-have-key-events": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {},
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/heading-has-content": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {
-            "components": Object {
-              "additionalItems": false,
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-              "uniqueItems": true,
-            },
-          },
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/html-has-lang": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {},
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/iframe-has-title": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {},
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/img-redundant-alt": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {
-            "components": Object {
-              "additionalItems": false,
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-              "uniqueItems": true,
-            },
-            "words": Object {
-              "additionalItems": false,
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-              "uniqueItems": true,
-            },
-          },
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/interactive-supports-focus": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {
-            "tabbable": Object {
-              "additionalItems": false,
-              "items": Object {
-                "enum": Array [
-                  "button",
-                  "checkbox",
-                  "columnheader",
-                  "combobox",
-                  "grid",
-                  "gridcell",
-                  "link",
-                  "listbox",
-                  "menu",
-                  "menubar",
-                  "menuitem",
-                  "menuitemcheckbox",
-                  "menuitemradio",
-                  "option",
-                  "progressbar",
-                  "radio",
-                  "radiogroup",
-                  "row",
-                  "rowheader",
-                  "searchbox",
-                  "slider",
-                  "spinbutton",
-                  "switch",
-                  "tab",
-                  "tablist",
-                  "textbox",
-                  "tree",
-                  "treegrid",
-                  "treeitem",
-                  "doc-backlink",
-                  "doc-biblioref",
-                  "doc-glossref",
-                  "doc-noteref",
-                ],
-                "type": "string",
-              },
-              "minItems": 0,
-              "type": "array",
-              "uniqueItems": true,
-            },
-          },
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/label-has-for": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {
-            "allowChildren": Object {
-              "type": "boolean",
-            },
-            "components": Object {
-              "additionalItems": false,
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-              "uniqueItems": true,
-            },
-            "required": Object {
-              "oneOf": Array [
-                Object {
-                  "enum": Array [
-                    "nesting",
-                    "id",
-                  ],
-                  "type": "string",
-                },
-                Object {
-                  "properties": Object {
-                    "some": Object {
-                      "additionalItems": false,
-                      "items": Object {
-                        "enum": Array [
-                          "nesting",
-                          "id",
-                        ],
-                        "type": "string",
-                      },
-                      "minItems": 0,
-                      "type": "array",
-                      "uniqueItems": true,
-                    },
-                  },
-                  "required": Array [
-                    "some",
-                  ],
-                  "type": "object",
-                },
-                Object {
-                  "properties": Object {
-                    "every": Object {
-                      "additionalItems": false,
-                      "items": Object {
-                        "enum": Array [
-                          "nesting",
-                          "id",
-                        ],
-                        "type": "string",
-                      },
-                      "minItems": 0,
-                      "type": "array",
-                      "uniqueItems": true,
-                    },
-                  },
-                  "required": Array [
-                    "every",
-                  ],
-                  "type": "object",
-                },
-              ],
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/lang": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {},
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/media-has-caption": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {
-            "audio": Object {
-              "additionalItems": false,
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-              "uniqueItems": true,
-            },
-            "track": Object {
-              "additionalItems": false,
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-              "uniqueItems": true,
-            },
-            "video": Object {
-              "additionalItems": false,
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-              "uniqueItems": true,
-            },
-          },
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/mouse-events-have-key-events": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {},
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/no-access-key": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {},
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/no-autofocus": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {
-            "ignoreNonDOM": Object {
-              "default": false,
-              "type": "boolean",
-            },
-          },
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/no-distracting-elements": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {
-            "elements": Object {
-              "additionalItems": false,
-              "items": Object {
-                "enum": Array [
-                  "marquee",
-                  "blink",
-                ],
-                "type": "string",
-              },
-              "minItems": 0,
-              "type": "array",
-              "uniqueItems": true,
-            },
-          },
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/no-interactive-element-to-noninteractive-role": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "additionalProperties": Object {
-            "items": Object {
-              "type": "string",
-            },
-            "type": "array",
-            "uniqueItems": true,
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/no-noninteractive-element-interactions": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {
-            "handlers": Object {
-              "additionalItems": false,
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-              "uniqueItems": true,
-            },
-          },
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/no-noninteractive-element-to-interactive-role": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "additionalProperties": Object {
-            "items": Object {
-              "type": "string",
-            },
-            "type": "array",
-            "uniqueItems": true,
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/no-noninteractive-tabindex": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {
-            "roles": Object {
-              "additionalItems": false,
-              "description": "An array of ARIA roles",
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-              "uniqueItems": true,
-            },
-            "tags": Object {
-              "additionalItems": false,
-              "description": "An array of HTML tag names",
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-              "uniqueItems": true,
-            },
-          },
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/no-onchange": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {},
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/no-redundant-roles": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {},
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/no-static-element-interactions": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {
-            "handlers": Object {
-              "additionalItems": false,
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-              "uniqueItems": true,
-            },
-          },
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/role-has-required-aria-props": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {},
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/role-supports-aria-props": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {},
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/scope": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {},
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "jsx-a11y/tabindex-no-positive": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "schema": Array [
-        Object {
-          "properties": Object {},
-          "required": undefined,
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "react/boolean-prop-naming": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Stylistic Issues",
-        "description": "Enforces consistent naming for boolean props",
-        "recommended": false,
-      },
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "propTypeNames": Object {
-              "items": Object {
-                "type": "string",
-              },
-              "minItems": 1,
-              "type": "array",
-              "uniqueItems": true,
-            },
-            "rule": Object {
-              "default": "^(is|has)[A-Z]([A-Za-z0-9]?)+",
-              "minLength": 1,
-              "type": "string",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "react/default-props-match-prop-types": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Best Practices",
-        "description": "Enforce all defaultProps are defined and not \\"required\\" in propTypes.",
-      },
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "allowRequiredDefaults": Object {
-              "default": false,
-              "type": "boolean",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "react/display-name": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Best Practices",
-        "description": "Prevent missing displayName in a React component definition",
-        "recommended": true,
-      },
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "ignoreTranspilerName": Object {
-              "type": "boolean",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "react/forbid-component-props": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Best Practices",
-        "description": "Forbid certain props on components",
-        "recommended": false,
-      },
-      "schema": Array [
-        Object {
-          "additionalProperties": true,
-          "properties": Object {
-            "forbid": Object {
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "react/forbid-elements": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Best Practices",
-        "description": "Forbid certain elements",
-        "recommended": false,
-      },
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "forbid": Object {
-              "items": Object {
-                "anyOf": Array [
-                  Object {
-                    "type": "string",
-                  },
-                  Object {
-                    "additionalProperties": false,
-                    "properties": Object {
-                      "element": Object {
-                        "type": "string",
-                      },
-                      "message": Object {
-                        "type": "string",
-                      },
-                    },
-                    "required": Array [
-                      "element",
-                    ],
-                    "type": "object",
-                  },
-                ],
-              },
-              "type": "array",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "react/forbid-foreign-prop-types": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Best Practices",
-        "description": "Forbid using another component's propTypes",
-        "recommended": false,
-      },
-    },
-  },
-  "react/forbid-prop-types": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Best Practices",
-        "description": "Forbid certain propTypes",
-        "recommended": false,
-      },
-      "schema": Array [
-        Object {
-          "additionalProperties": true,
-          "properties": Object {
-            "forbid": Object {
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "react/jsx-boolean-value": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Stylistic Issues",
-        "description": "Enforce boolean attributes notation in JSX",
-        "recommended": false,
-      },
-      "fixable": "code",
-      "schema": Object {
-        "anyOf": Array [
-          Object {
-            "additionalItems": false,
-            "items": Array [
-              Object {
-                "enum": Array [
-                  "always",
-                  "never",
-                ],
-              },
-            ],
-            "type": "array",
-          },
-          Object {
-            "additionalItems": false,
-            "items": Array [
-              Object {
-                "enum": Array [
-                  "always",
-                ],
-              },
-              Object {
-                "additionalProperties": false,
-                "properties": Object {
-                  "never": Object {
-                    "items": Object {
-                      "minLength": 1,
-                      "type": "string",
-                    },
-                    "type": "array",
-                    "uniqueItems": true,
-                  },
-                },
-                "type": "object",
-              },
-            ],
-            "type": "array",
-          },
-          Object {
-            "additionalItems": false,
-            "items": Array [
-              Object {
-                "enum": Array [
-                  "never",
-                ],
-              },
-              Object {
-                "additionalProperties": false,
-                "properties": Object {
-                  "always": Object {
-                    "items": Object {
-                      "minLength": 1,
-                      "type": "string",
-                    },
-                    "type": "array",
-                    "uniqueItems": true,
-                  },
-                },
-                "type": "object",
-              },
-            ],
-            "type": "array",
-          },
-        ],
-      },
-    },
-  },
-  "react/jsx-closing-bracket-location": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Stylistic Issues",
-        "description": "Validate closing bracket location in JSX",
-        "recommended": false,
-      },
-      "fixable": "code",
-      "schema": Array [
-        Object {
-          "oneOf": Array [
-            Object {
-              "enum": Array [
-                "after-props",
-                "props-aligned",
-                "tag-aligned",
-                "line-aligned",
-              ],
-            },
-            Object {
-              "additionalProperties": false,
-              "properties": Object {
-                "location": Object {
-                  "enum": Array [
-                    "after-props",
-                    "props-aligned",
-                    "tag-aligned",
-                    "line-aligned",
-                  ],
-                },
-              },
-              "type": "object",
-            },
-            Object {
-              "additionalProperties": false,
-              "properties": Object {
-                "nonEmpty": Object {
-                  "enum": Array [
-                    "after-props",
-                    "props-aligned",
-                    "tag-aligned",
-                    "line-aligned",
-                    false,
-                  ],
-                },
-                "selfClosing": Object {
-                  "enum": Array [
-                    "after-props",
-                    "props-aligned",
-                    "tag-aligned",
-                    "line-aligned",
-                    false,
-                  ],
-                },
-              },
-              "type": "object",
-            },
-          ],
-        },
-      ],
-    },
-  },
-  "react/jsx-closing-tag-location": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Stylistic Issues",
-        "description": "Validate closing tag location for multiline JSX",
-        "recommended": false,
-      },
-      "fixable": "whitespace",
-    },
-  },
-  "react/jsx-curly-brace-presence": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Stylistic Issues",
-        "description": "Disallow unnecessary JSX expressions when literals alone are sufficient or enfore JSX expressions on literals in JSX children or attributes",
-        "recommended": false,
-      },
-      "fixable": "code",
-      "schema": Array [
-        Object {
-          "oneOf": Array [
-            Object {
-              "additionalProperties": false,
-              "properties": Object {
-                "children": Object {
-                  "default": "never",
-                  "enum": Array [
-                    "always",
-                    "never",
-                    "ignore",
-                  ],
-                },
-                "props": Object {
-                  "default": "never",
-                  "enum": Array [
-                    "always",
-                    "never",
-                    "ignore",
-                  ],
-                },
-              },
-              "type": "object",
-            },
-            Object {
-              "enum": Array [
-                "always",
-                "never",
-                "ignore",
-              ],
-            },
-          ],
-        },
-      ],
-    },
-  },
-  "react/jsx-curly-spacing": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Stylistic Issues",
-        "description": "Enforce or disallow spaces inside of curly braces in JSX attributes",
-        "recommended": false,
-      },
-      "fixable": "code",
-      "schema": Object {
-        "definitions": Object {
-          "basicConfig": Object {
-            "properties": Object {
-              "allowMultiline": Object {
-                "type": "boolean",
-              },
-              "spacing": Object {
-                "properties": Object {
-                  "objectLiterals": Object {
-                    "enum": Array [
-                      "always",
-                      "never",
-                    ],
-                  },
-                },
-                "type": "object",
-              },
-              "when": Object {
-                "enum": Array [
-                  "always",
-                  "never",
-                ],
-              },
-            },
-            "type": "object",
-          },
-          "basicConfigOrBoolean": Object {
-            "oneOf": Array [
-              Object {
-                "$ref": "#/definitions/basicConfig",
-              },
-              Object {
-                "type": "boolean",
-              },
-            ],
-          },
-        },
-        "items": Array [
-          Object {
-            "oneOf": Array [
-              Object {
-                "allOf": Array [
-                  Object {
-                    "$ref": "#/definitions/basicConfig",
-                  },
-                  Object {
-                    "properties": Object {
-                      "attributes": Object {
-                        "$ref": "#/definitions/basicConfigOrBoolean",
-                      },
-                      "children": Object {
-                        "$ref": "#/definitions/basicConfigOrBoolean",
-                      },
-                    },
-                    "type": "object",
-                  },
-                ],
-              },
-              Object {
-                "enum": Array [
-                  "always",
-                  "never",
-                ],
-              },
-            ],
-          },
-          Object {
-            "additionalProperties": false,
-            "properties": Object {
-              "allowMultiline": Object {
-                "type": "boolean",
-              },
-              "spacing": Object {
-                "properties": Object {
-                  "objectLiterals": Object {
-                    "enum": Array [
-                      "always",
-                      "never",
-                    ],
-                  },
-                },
-                "type": "object",
-              },
-            },
-            "type": "object",
-          },
-        ],
-        "type": "array",
-      },
-    },
-  },
-  "react/jsx-equals-spacing": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Stylistic Issues",
-        "description": "Disallow or enforce spaces around equal signs in JSX attributes",
-        "recommended": false,
-      },
-      "fixable": "code",
-      "schema": Array [
-        Object {
-          "enum": Array [
-            "always",
-            "never",
-          ],
-        },
-      ],
-    },
-  },
-  "react/jsx-filename-extension": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Stylistic Issues",
-        "description": "Restrict file extensions that may contain JSX",
-        "recommended": false,
-      },
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "extensions": Object {
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "react/jsx-first-prop-new-line": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Stylistic Issues",
-        "description": "Ensure proper position of the first property in JSX",
-        "recommended": false,
-      },
-      "fixable": "code",
-      "schema": Array [
-        Object {
-          "enum": Array [
-            "always",
-            "never",
-            "multiline",
-            "multiline-multiprop",
-          ],
-        },
-      ],
-    },
-  },
-  "react/jsx-handler-names": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Stylistic Issues",
-        "description": "Enforce event handler naming conventions in JSX",
-        "recommended": false,
-      },
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "eventHandlerPrefix": Object {
-              "type": "string",
-            },
-            "eventHandlerPropPrefix": Object {
-              "type": "string",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "react/jsx-indent": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Stylistic Issues",
-        "description": "Validate JSX indentation",
-        "recommended": false,
-      },
-      "fixable": "whitespace",
-      "schema": Array [
-        Object {
-          "oneOf": Array [
-            Object {
-              "enum": Array [
-                "tab",
-              ],
-            },
-            Object {
-              "type": "integer",
-            },
-          ],
-        },
-      ],
-    },
-  },
-  "react/jsx-indent-props": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Stylistic Issues",
-        "description": "Validate props indentation in JSX",
-        "recommended": false,
-      },
-      "fixable": "code",
-      "schema": Array [
-        Object {
-          "oneOf": Array [
-            Object {
-              "enum": Array [
-                "tab",
-              ],
-            },
-            Object {
-              "type": "integer",
-            },
-          ],
-        },
-      ],
-    },
-  },
-  "react/jsx-key": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Possible Errors",
-        "description": "Report missing \`key\` props in iterators/collection literals",
-        "recommended": true,
-      },
-      "schema": Array [],
-    },
-  },
-  "react/jsx-max-props-per-line": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Stylistic Issues",
-        "description": "Limit maximum of props on a single line in JSX",
-        "recommended": false,
-      },
-      "fixable": "code",
-      "schema": Array [
-        Object {
-          "properties": Object {
-            "maximum": Object {
-              "minimum": 1,
-              "type": "integer",
-            },
-            "when": Object {
-              "enum": Array [
-                "always",
-                "multiline",
-              ],
-              "type": "string",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "react/jsx-no-bind": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Best Practices",
-        "description": "Prevents usage of Function.prototype.bind and arrow functions in React component definition",
-        "recommended": false,
-      },
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "allowArrowFunctions": Object {
-              "default": false,
-              "type": "boolean",
-            },
-            "allowBind": Object {
-              "default": false,
-              "type": "boolean",
-            },
-            "ignoreRefs": Object {
-              "default": false,
-              "type": "boolean",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "react/jsx-no-comment-textnodes": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Possible Errors",
-        "description": "Comments inside children section of tag should be placed inside braces",
-        "recommended": true,
-      },
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {},
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "react/jsx-no-duplicate-props": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Possible Errors",
-        "description": "Enforce no duplicate props",
-        "recommended": true,
-      },
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "ignoreCase": Object {
-              "type": "boolean",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "react/jsx-no-literals": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Stylistic Issues",
-        "description": "Prevent using string literals in React component definition",
-        "recommended": false,
-      },
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "noStrings": Object {
-              "type": "boolean",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "react/jsx-no-target-blank": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Best Practices",
-        "description": "Forbid target=\\"_blank\\" attribute without rel=\\"noopener noreferrer\\"",
-        "recommended": true,
-      },
-      "schema": Array [],
-    },
-  },
-  "react/jsx-no-undef": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Possible Errors",
-        "description": "Disallow undeclared variables in JSX",
-        "recommended": true,
-      },
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "allowGlobals": Object {
-              "type": "boolean",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "react/jsx-pascal-case": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Stylistic Issues",
-        "description": "Enforce PascalCase for user-defined JSX components",
-        "recommended": false,
-      },
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "allowAllCaps": Object {
-              "type": "boolean",
-            },
-            "ignore": Object {
-              "type": "array",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "react/jsx-sort-props": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Stylistic Issues",
-        "description": "Enforce props alphabetical sorting",
-        "recommended": false,
-      },
-      "fixable": "code",
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "callbacksLast": Object {
-              "type": "boolean",
-            },
-            "ignoreCase": Object {
-              "type": "boolean",
-            },
-            "noSortAlphabetically": Object {
-              "type": "boolean",
-            },
-            "reservedFirst": Object {
-              "type": Array [
-                "array",
-                "boolean",
-              ],
-            },
-            "shorthandFirst": Object {
-              "type": "boolean",
-            },
-            "shorthandLast": Object {
-              "type": "boolean",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "react/jsx-space-before-closing": Object {
-    "create": [Function],
-    "meta": Object {
-      "deprecated": true,
-      "docs": Object {
-        "category": "Stylistic Issues",
-        "description": "Validate spacing before closing bracket in JSX",
-        "recommended": false,
-      },
-      "fixable": "code",
-      "schema": Array [
-        Object {
-          "enum": Array [
-            "always",
-            "never",
-          ],
-        },
-      ],
-    },
-  },
-  "react/jsx-tag-spacing": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {},
-      "fixable": "whitespace",
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "default": Object {
-            "afterOpening": "never",
-            "beforeSelfClosing": "always",
-            "closingSlash": "never",
-          },
-          "properties": Object {
-            "afterOpening": Object {
-              "enum": Array [
-                "always",
-                "allow-multiline",
-                "never",
-                "allow",
-              ],
-            },
-            "beforeSelfClosing": Object {
-              "enum": Array [
-                "always",
-                "never",
-                "allow",
-              ],
-            },
-            "closingSlash": Object {
-              "enum": Array [
-                "always",
-                "never",
-                "allow",
-              ],
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "react/jsx-uses-react": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Best Practices",
-        "description": "Prevent React to be marked as unused",
-        "recommended": true,
-      },
-      "schema": Array [],
-    },
-  },
-  "react/jsx-uses-vars": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Best Practices",
-        "description": "Prevent variables used in JSX to be marked as unused",
-        "recommended": true,
-      },
-      "schema": Array [],
-    },
-  },
-  "react/jsx-wrap-multilines": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Stylistic Issues",
-        "description": "Prevent missing parentheses around multilines JSX",
-        "recommended": false,
-      },
-      "fixable": "code",
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "arrow": Object {
-              "type": "boolean",
-            },
-            "assignment": Object {
-              "type": "boolean",
-            },
-            "declaration": Object {
-              "type": "boolean",
-            },
-            "return": Object {
-              "type": "boolean",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "react/no-array-index-key": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Best Practices",
-        "description": "Prevent usage of Array index in keys",
-        "recommended": false,
-      },
-      "schema": Array [],
-    },
-  },
-  "react/no-children-prop": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Best Practices",
-        "description": "Prevent passing of children as props.",
-        "recommended": true,
-      },
-      "schema": Array [],
-    },
-  },
-  "react/no-danger": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Best Practices",
-        "description": "Prevent usage of dangerous JSX props",
-        "recommended": false,
-      },
-      "schema": Array [],
-    },
-  },
-  "react/no-danger-with-children": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "",
-        "description": "Report when a DOM element is using both children and dangerouslySetInnerHTML",
-        "recommended": true,
-      },
-      "schema": Array [],
-    },
-  },
-  "react/no-deprecated": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Best Practices",
-        "description": "Prevent usage of deprecated methods",
-        "recommended": true,
-      },
-      "schema": Array [],
-    },
-  },
-  "react/no-did-mount-set-state": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Best Practices",
-        "description": "Prevent usage of setState in componentDidMount",
-        "recommended": false,
-      },
-      "schema": Array [
-        Object {
-          "enum": Array [
-            "disallow-in-func",
-          ],
-        },
-      ],
-    },
-  },
-  "react/no-did-update-set-state": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Best Practices",
-        "description": "Prevent usage of setState in componentDidUpdate",
-        "recommended": false,
-      },
-      "schema": Array [
-        Object {
-          "enum": Array [
-            "disallow-in-func",
-          ],
-        },
-      ],
-    },
-  },
-  "react/no-direct-mutation-state": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Possible Errors",
-        "description": "Prevent direct mutation of this.state",
-        "recommended": true,
-      },
-    },
-  },
-  "react/no-find-dom-node": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Best Practices",
-        "description": "Prevent usage of findDOMNode",
-        "recommended": true,
-      },
-      "schema": Array [],
-    },
-  },
-  "react/no-is-mounted": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Best Practices",
-        "description": "Prevent usage of isMounted",
-        "recommended": true,
-      },
-      "schema": Array [],
-    },
-  },
-  "react/no-multi-comp": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Stylistic Issues",
-        "description": "Prevent multiple component definition per file",
-        "recommended": false,
-      },
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "ignoreStateless": Object {
-              "default": false,
-              "type": "boolean",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "react/no-redundant-should-component-update": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Possible Errors",
-        "description": "Flag shouldComponentUpdate when extending PureComponent",
-        "recommended": false,
-      },
-      "schema": Array [],
-    },
-  },
-  "react/no-render-return-value": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Best Practices",
-        "description": "Prevent usage of the return value of React.render",
-        "recommended": true,
-      },
-      "schema": Array [],
-    },
-  },
-  "react/no-set-state": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Stylistic Issues",
-        "description": "Prevent usage of setState",
-        "recommended": false,
-      },
-      "schema": Array [],
-    },
-  },
-  "react/no-string-refs": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Best Practices",
-        "description": "Prevent string definitions for references and prevent referencing this.refs",
-        "recommended": true,
-      },
-      "schema": Array [],
-    },
-  },
-  "react/no-typos": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Stylistic Issues",
-        "description": "Prevent common typos",
-        "recommended": false,
-      },
-      "schema": Array [],
-    },
-  },
-  "react/no-unescaped-entities": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Possible Errors",
-        "description": "Detect unescaped HTML entities, which might represent malformed tags",
-        "recommended": true,
-      },
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "forbid": Object {
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "react/no-unknown-property": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Possible Errors",
-        "description": "Prevent usage of unknown DOM property",
-        "recommended": true,
-      },
-      "fixable": "code",
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "ignore": Object {
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "react/no-unused-prop-types": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Best Practices",
-        "description": "Prevent definitions of unused prop types",
-        "recommended": false,
-      },
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "customValidators": Object {
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-            },
-            "skipShapeProps": Object {
-              "type": "boolean",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "react/no-unused-state": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Best Practices",
-        "description": "Prevent definition of unused state fields",
-        "recommended": false,
-      },
-      "schema": Array [],
-    },
-  },
-  "react/no-will-update-set-state": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Best Practices",
-        "description": "Prevent usage of setState in componentWillUpdate",
-        "recommended": false,
-      },
-      "schema": Array [
-        Object {
-          "enum": Array [
-            "disallow-in-func",
-          ],
-        },
-      ],
-    },
-  },
-  "react/prefer-es6-class": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Stylistic Issues",
-        "description": "Enforce ES5 or ES6 class for React Components",
-        "recommended": false,
-      },
-      "schema": Array [
-        Object {
-          "enum": Array [
-            "always",
-            "never",
-          ],
-        },
-      ],
-    },
-  },
-  "react/prefer-stateless-function": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Stylistic Issues",
-        "description": "Enforce stateless components to be written as a pure function",
-        "recommended": false,
-      },
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "ignorePureComponents": Object {
-              "default": false,
-              "type": "boolean",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "react/prop-types": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Best Practices",
-        "description": "Prevent missing props validation in a React component definition",
-        "recommended": true,
-      },
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "customValidators": Object {
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-            },
-            "ignore": Object {
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-            },
-            "skipUndeclared": Object {
-              "type": "boolean",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "react/react-in-jsx-scope": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Possible Errors",
-        "description": "Prevent missing React when using JSX",
-        "recommended": true,
-      },
-      "schema": Array [],
-    },
-  },
-  "react/require-default-props": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Best Practices",
-        "description": "Enforce a defaultProps definition for every prop that is not a required prop.",
-      },
-      "schema": Array [],
-    },
-  },
-  "react/require-optimization": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Best Practices",
-        "description": "Enforce React components to have a shouldComponentUpdate method",
-        "recommended": false,
-      },
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "allowDecorators": Object {
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "react/require-render-return": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Possible Errors",
-        "description": "Enforce ES5 or ES6 class for returning value in render function",
-        "recommended": true,
-      },
-      "schema": Array [
-        Object {},
-      ],
-    },
-  },
-  "react/self-closing-comp": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Stylistic Issues",
-        "description": "Prevent extra closing tags for components without children",
-        "recommended": false,
-      },
-      "fixable": "code",
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "component": Object {
-              "default": true,
-              "type": "boolean",
-            },
-            "html": Object {
-              "default": true,
-              "type": "boolean",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "react/sort-comp": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Stylistic Issues",
-        "description": "Enforce component methods order",
-        "recommended": false,
-      },
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "groups": Object {
-              "patternProperties": Object {
-                "^.*$": Object {
-                  "items": Object {
-                    "type": "string",
-                  },
-                  "type": "array",
-                },
-              },
-              "type": "object",
-            },
-            "order": Object {
-              "items": Object {
-                "type": "string",
-              },
-              "type": "array",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "react/sort-prop-types": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Stylistic Issues",
-        "description": "Enforce propTypes declarations alphabetical sorting",
-        "recommended": false,
-      },
-      "schema": Array [
-        Object {
-          "additionalProperties": false,
-          "properties": Object {
-            "callbacksLast": Object {
-              "type": "boolean",
-            },
-            "ignoreCase": Object {
-              "type": "boolean",
-            },
-            "requiredFirst": Object {
-              "type": "boolean",
-            },
-          },
-          "type": "object",
-        },
-      ],
-    },
-  },
-  "react/style-prop-object": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "",
-        "description": "Enforce style prop value is an object",
-        "recommended": false,
-      },
-      "schema": Array [],
-    },
-  },
-  "react/void-dom-elements-no-children": Object {
-    "create": [Function],
-    "meta": Object {
-      "docs": Object {
-        "category": "Best Practices",
-        "description": "Prevent passing of children to void DOM elements (e.g. <br />).",
-        "recommended": false,
-      },
-      "schema": Array [],
-    },
-  },
+  "import/default": true,
+  "import/export": true,
+  "import/exports-last": true,
+  "import/extensions": true,
+  "import/first": true,
+  "import/imports-first": true,
+  "import/max-dependencies": true,
+  "import/named": true,
+  "import/namespace": true,
+  "import/newline-after-import": true,
+  "import/no-absolute-path": true,
+  "import/no-amd": true,
+  "import/no-anonymous-default-export": true,
+  "import/no-commonjs": true,
+  "import/no-deprecated": true,
+  "import/no-duplicates": true,
+  "import/no-dynamic-require": true,
+  "import/no-extraneous-dependencies": true,
+  "import/no-internal-modules": true,
+  "import/no-mutable-exports": true,
+  "import/no-named-as-default": true,
+  "import/no-named-as-default-member": true,
+  "import/no-named-default": true,
+  "import/no-namespace": true,
+  "import/no-nodejs-modules": true,
+  "import/no-restricted-paths": true,
+  "import/no-unassigned-import": true,
+  "import/no-unresolved": true,
+  "import/no-webpack-loader-syntax": true,
+  "import/order": true,
+  "import/prefer-default-export": true,
+  "import/unambiguous": true,
+  "jsx-a11y/accessible-emoji": true,
+  "jsx-a11y/alt-text": true,
+  "jsx-a11y/anchor-has-content": true,
+  "jsx-a11y/anchor-is-valid": true,
+  "jsx-a11y/aria-activedescendant-has-tabindex": true,
+  "jsx-a11y/aria-props": true,
+  "jsx-a11y/aria-proptypes": true,
+  "jsx-a11y/aria-role": true,
+  "jsx-a11y/aria-unsupported-elements": true,
+  "jsx-a11y/click-events-have-key-events": true,
+  "jsx-a11y/heading-has-content": true,
+  "jsx-a11y/html-has-lang": true,
+  "jsx-a11y/iframe-has-title": true,
+  "jsx-a11y/img-redundant-alt": true,
+  "jsx-a11y/interactive-supports-focus": true,
+  "jsx-a11y/label-has-for": true,
+  "jsx-a11y/lang": true,
+  "jsx-a11y/media-has-caption": true,
+  "jsx-a11y/mouse-events-have-key-events": true,
+  "jsx-a11y/no-access-key": true,
+  "jsx-a11y/no-autofocus": true,
+  "jsx-a11y/no-distracting-elements": true,
+  "jsx-a11y/no-interactive-element-to-noninteractive-role": true,
+  "jsx-a11y/no-noninteractive-element-interactions": true,
+  "jsx-a11y/no-noninteractive-element-to-interactive-role": true,
+  "jsx-a11y/no-noninteractive-tabindex": true,
+  "jsx-a11y/no-onchange": true,
+  "jsx-a11y/no-redundant-roles": true,
+  "jsx-a11y/no-static-element-interactions": true,
+  "jsx-a11y/role-has-required-aria-props": true,
+  "jsx-a11y/role-supports-aria-props": true,
+  "jsx-a11y/scope": true,
+  "jsx-a11y/tabindex-no-positive": true,
+  "react/boolean-prop-naming": true,
+  "react/default-props-match-prop-types": true,
+  "react/display-name": true,
+  "react/forbid-component-props": true,
+  "react/forbid-elements": true,
+  "react/forbid-foreign-prop-types": true,
+  "react/forbid-prop-types": true,
+  "react/jsx-boolean-value": true,
+  "react/jsx-closing-bracket-location": true,
+  "react/jsx-closing-tag-location": true,
+  "react/jsx-curly-brace-presence": true,
+  "react/jsx-curly-spacing": true,
+  "react/jsx-equals-spacing": true,
+  "react/jsx-filename-extension": true,
+  "react/jsx-first-prop-new-line": true,
+  "react/jsx-handler-names": true,
+  "react/jsx-indent": true,
+  "react/jsx-indent-props": true,
+  "react/jsx-key": true,
+  "react/jsx-max-props-per-line": true,
+  "react/jsx-no-bind": true,
+  "react/jsx-no-comment-textnodes": true,
+  "react/jsx-no-duplicate-props": true,
+  "react/jsx-no-literals": true,
+  "react/jsx-no-target-blank": true,
+  "react/jsx-no-undef": true,
+  "react/jsx-pascal-case": true,
+  "react/jsx-sort-props": true,
+  "react/jsx-space-before-closing": true,
+  "react/jsx-tag-spacing": true,
+  "react/jsx-uses-react": true,
+  "react/jsx-uses-vars": true,
+  "react/jsx-wrap-multilines": true,
+  "react/no-array-index-key": true,
+  "react/no-children-prop": true,
+  "react/no-danger": true,
+  "react/no-danger-with-children": true,
+  "react/no-deprecated": true,
+  "react/no-did-mount-set-state": true,
+  "react/no-did-update-set-state": true,
+  "react/no-direct-mutation-state": true,
+  "react/no-find-dom-node": true,
+  "react/no-is-mounted": true,
+  "react/no-multi-comp": true,
+  "react/no-redundant-should-component-update": true,
+  "react/no-render-return-value": true,
+  "react/no-set-state": true,
+  "react/no-string-refs": true,
+  "react/no-typos": true,
+  "react/no-unescaped-entities": true,
+  "react/no-unknown-property": true,
+  "react/no-unused-prop-types": true,
+  "react/no-unused-state": true,
+  "react/no-will-update-set-state": true,
+  "react/prefer-es6-class": true,
+  "react/prefer-stateless-function": true,
+  "react/prop-types": true,
+  "react/react-in-jsx-scope": true,
+  "react/require-default-props": true,
+  "react/require-optimization": true,
+  "react/require-render-return": true,
+  "react/self-closing-comp": true,
+  "react/sort-comp": true,
+  "react/sort-prop-types": true,
+  "react/style-prop-object": true,
+  "react/void-dom-elements-no-children": true,
 }
 `;
