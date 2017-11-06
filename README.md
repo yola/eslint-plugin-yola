@@ -1,18 +1,15 @@
 # eslint-plugin-yola
 
-Extendable eslint plugin that ensures code style quality for Yola front-end codebase.  
-ES6 code style is based on [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript).
+An eslint plugin to lint Yola's javascript.  
+ES6 code style is based on [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript). 
 
-This plugin solves problem of shareable eslint configs that depend on eslint plugins, which described in https://github.com/eslint/eslint/issues/3458.  
-Basically, to resolve eslint plugins dependencies this plugin wraps `eslint-config-airbnb`, `eslint-config-airbnb-base` rules with extracted rules from plugins. The approach was inspired by [eslint-plugin-react-app](https://github.com/mmazzarolo/eslint-plugin-react-app/) 
-
-# Installation
-Install eslint and plugin package with npm as developmnt dependencies:
+## Installation
+Install eslint and plugin package with npm as development dependencies:
 ```
 npm install --save-dev eslint eslint-plugin-yola
 ```
 
-# Usage
+## Usage
 There are two configurations available:
 - **yola/base** - based on `eslint-config-airbnb-base` - used to lint ES6 code 
 - **yola/react** - based on `eslint-config-airbnb` - used to lint React components code
@@ -36,3 +33,16 @@ With npm scripts:
 ```
 "lint": "eslint -c .eslintrc.js ./src/**/*.js"
 ```
+
+## FAQ
+
+### Why eslint?
+
+We were using jshint and found it too restrictive. We wanted to extend from other style guides.  
+Another reason to have eslint is a JSX support.
+
+### Why a plugin?
+
+The plugin solves problem of shareable eslint configs that depend on eslint plugins, which described in https://github.com/eslint/eslint/issues/3458.  
+Basically, to resolve eslint plugins dependencies this plugin wraps `eslint-config-airbnb`, `eslint-config-airbnb-base` rules with extracted rules from plugins.  
+The approach was inspired by [eslint-plugin-react-app](https://github.com/mmazzarolo/eslint-plugin-react-app/)
