@@ -53,8 +53,12 @@ describe('createConfig creates extended config', () => {
     expect(isPickedPropsOnly).toBe(true);
   });
 
-  it('doesn\'t get plugins overrided by extension', () => {
+  it('doesn\'t get "plugins" prop overrided by extension', () => {
     expect(extendedConfig.plugins).toEqual(baseConfig.plugins);
+  });
+
+  it('doesn\'t get "parser" prop overrided by extension', () => {
+    expect(extendedConfig.parser).toBe(baseConfig.parser);
   });
 
   it('resolves "extends" property rules', () => {
