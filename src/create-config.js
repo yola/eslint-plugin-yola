@@ -3,7 +3,9 @@
 const merge = require('lodash/merge');
 const pick = require('lodash/pick');
 
+const getConfigBase = require('./get-config-base');
 const pluginsDependencies = require('./plugins-dependencies');
+const propsToPick = require('./props-to-pick');
 
 const isPluginRule = ruleName => pluginsDependencies
   .some(plugin => ruleName.indexOf(`${plugin}/`) === 0);
@@ -19,13 +21,6 @@ const getConfigRules = config => Object
 
     return result;
   }, {});
-
-const getConfigBase = () => ({
-  parser: require.resolve('babel-eslint'),
-  plugins: ['yola'],
-});
-
-const propsToPick = ['env', 'parserOptions', 'root', 'settings'];
 
 const extendConfig = (config, ext) => {
   let extension = ext;
