@@ -1,11 +1,13 @@
 const path = require('path');
 
+const getConfigBase = require('../src/get-config-base');
 const createConfig = require('../src/create-config');
 const propsToPick = require('../src/props-to-pick');
 
 const propsToHave = propsToPick.concat('parser', 'plugins', 'rules');
 
-describe('create-config extends base config with provided', () => {
+describe('createConfig creates extended config', () => {
+  const baseConfig = getConfigBase();
   const mockParser = 'mock-parser';
   let extendedConfig;
   let extension;
@@ -37,23 +39,22 @@ describe('create-config extends base config with provided', () => {
     jest.clearAllMocks();
   });
 
-  it('merge extension into base config', () => {
+  it('merge extension rules into base', () => {
     const isRulesMerged = Object.keys(mockRules)
       .every(rule => !!extendedConfig.rules[rule]);
 
     expect(isRulesMerged).toBe(true);
   });
 
-  it('picks necessary props only', () => {
+  it('picks only necessary props from extension', () => {
     const isPickedPropsOnly = Object.keys(extendedConfig)
       .every(prop => propsToHave.indexOf(prop) !== -1);
 
     expect(isPickedPropsOnly).toBe(true);
   });
 
-  it('doesn\'t override plugins array', () => {
-    expect(extendedConfig.plugins.length).toBe(1);
-    expect(extendedConfig.plugins[0]).toBe('yola');
+  it('doesn\'t get plugins overrided by extension', () => {
+    expect(extendedConfig.plugins).toEqual(baseConfig.plugins);
   });
 
   it('resolves "extends" property rules', () => {
