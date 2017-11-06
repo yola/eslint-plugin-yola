@@ -31,7 +31,7 @@ module.exports = {
 ## Run    
 With npm scripts:
 ```
-"lint": "eslint -c .eslintrc.js ./src/**/*.js"
+"lint": "eslint ./src/**/*.js"
 ```
 
 ## FAQ
