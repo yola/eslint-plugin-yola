@@ -27,5 +27,5 @@ describe('get plugins rules object', () => {
         .every(pluginRuleName => rules[`${plugin}/${pluginRuleName}`]));
 
     expect(hasDependencyRules).toBe(true);
-  })
+  });
 });
