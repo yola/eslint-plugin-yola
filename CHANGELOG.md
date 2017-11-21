@@ -1,5 +1,11 @@
 # Change log
 
+## dev
+
+* Extend base configuration with: 
+  - env variables 
+  - overrides for test files 
+
 ## 0.0.2
 
 * Fix bad release
