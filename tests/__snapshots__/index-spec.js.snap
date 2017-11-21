@@ -4,9 +4,31 @@ exports[`eslint-plugin-yola must contain configs and rules properties 1`] = `
 Object {
   "base": Object {
     "env": Object {
+      "browser": true,
       "es6": true,
       "node": true,
     },
+    "overrides": Array [
+      Object {
+        "env": Object {
+          "mocha": true,
+        },
+        "files": Array [
+          "*-spec.js",
+          "*-spec.jsx",
+          "*.spec.js",
+          "*.spec.jsx",
+        ],
+        "rules": Object {
+          "import/no-extraneous-dependencies": Array [
+            "error",
+            Object {
+              "devDependencies": true,
+            },
+          ],
+        },
+      },
+    ],
     "parser": true,
     "parserOptions": Object {
       "ecmaFeatures": Object {
@@ -329,6 +351,30 @@ Object {
     },
   },
   "react": Object {
+    "env": Object {
+      "browser": true,
+    },
+    "overrides": Array [
+      Object {
+        "env": Object {
+          "mocha": true,
+        },
+        "files": Array [
+          "*-spec.js",
+          "*-spec.jsx",
+          "*.spec.js",
+          "*.spec.jsx",
+        ],
+        "rules": Object {
+          "import/no-extraneous-dependencies": Array [
+            "error",
+            Object {
+              "devDependencies": true,
+            },
+          ],
+        },
+      },
+    ],
     "parser": true,
     "parserOptions": Object {
       "ecmaFeatures": Object {

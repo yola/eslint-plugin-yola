@@ -4,7 +4,14 @@ const getConfigBase = require('../src/get-config-base');
 const createConfig = require('../src/create-config');
 const propsToPick = require('../src/props-to-pick');
 
-const propsToHave = propsToPick.concat('parser', 'plugins', 'rules');
+const baseProps = [
+  'overrides',
+  'parser',
+  'plugins',
+  'rules',
+];
+
+const propsToHave = propsToPick.concat(baseProps);
 
 describe('createConfig creates extended config', () => {
   const baseConfig = getConfigBase();
