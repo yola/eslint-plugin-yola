@@ -7,10 +7,10 @@ module.exports = () => ({
   overrides: [
     {
       files: [
-        '*-spec.js',
-        '*-spec.jsx',
-        '*.spec.js',
-        '*.spec.jsx',
+        '**/*-spec.js',
+        '**/*-spec.jsx',
+        '**/*.spec.js',
+        '**/*.spec.jsx',
       ],
       env: {
         mocha: true,
