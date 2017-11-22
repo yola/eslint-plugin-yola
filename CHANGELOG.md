@@ -1,6 +1,6 @@
 # Change log
 
-## dev
+## 0.1.2
 
 * Fix release with failing tests
 
