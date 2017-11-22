@@ -14,10 +14,10 @@ Object {
           "mocha": true,
         },
         "files": Array [
-          "*-spec.js",
-          "*-spec.jsx",
-          "*.spec.js",
-          "*.spec.jsx",
+          "**/*-spec.js",
+          "**/*-spec.jsx",
+          "**/*.spec.js",
+          "**/*.spec.jsx",
         ],
         "rules": Object {
           "import/no-extraneous-dependencies": Array [
@@ -360,10 +360,10 @@ Object {
           "mocha": true,
         },
         "files": Array [
-          "*-spec.js",
-          "*-spec.jsx",
-          "*.spec.js",
-          "*.spec.jsx",
+          "**/*-spec.js",
+          "**/*-spec.jsx",
+          "**/*.spec.js",
+          "**/*.spec.jsx",
         ],
         "rules": Object {
           "import/no-extraneous-dependencies": Array [
