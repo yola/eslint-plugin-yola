@@ -1,5 +1,9 @@
 # Change log
 
+## dev
+
+* Fix release with failing tests
+
 ## 0.1.1
 
 * Fix release with failing tests
