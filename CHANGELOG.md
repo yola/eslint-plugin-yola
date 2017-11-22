@@ -1,14 +1,14 @@
 # Change log
 
-## dev
+## 0.1.1
 
 * Fix release with failing tests
 
 ## 0.1.0
 
-* Extend base configuration with: 
-  - env variables 
-  - overrides for test files 
+* Extend base configuration with:
+  - env variables
+  - overrides for test files
 
 ## 0.0.3
 
