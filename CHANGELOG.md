@@ -1,6 +1,6 @@
 # Change log
 
-## dev
+## 0.1.3
 
 * Override base configuration to allow use of `console.error`
 
