@@ -1,5 +1,9 @@
 # Change log
 
+## dev
+
+* Override base configuration to allow use of `console.error`
+
 ## 0.1.2
 
 * Fix release with failing tests
