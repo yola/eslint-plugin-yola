@@ -1,6 +1,6 @@
 # Change log
 
-## dev
+## 0.2.0
 
 * Add `eslint-plugin-html` for inline javascript linting.
 
