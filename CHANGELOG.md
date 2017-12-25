@@ -1,5 +1,9 @@
 # Change log
 
+## dev
+
+* Add `eslint-plugin-html` for inline javascript linting.
+
 ## 0.1.3
 
 * Override base configuration to allow use of `console.error`
