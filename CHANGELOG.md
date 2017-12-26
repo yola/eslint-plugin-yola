@@ -1,6 +1,6 @@
 # Change log
 
-## dev
+## 0.2.1
 
 * Fix bad release
 
