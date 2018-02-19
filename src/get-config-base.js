@@ -24,6 +24,7 @@ module.exports = () => ({
       ],
       env: {
         mocha: true,
+        jest: true,
       },
       rules: {
         // Override `import/no-extraneous-dependencies` rule for test files
