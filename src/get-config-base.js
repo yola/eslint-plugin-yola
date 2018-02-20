@@ -27,7 +27,7 @@ module.exports = () => ({
         jest: true,
       },
       rules: {
-        // Override `import/no-extraneous-dependencies` rule for test files
+        // Override `yola/import/no-extraneous-dependencies` rule for test files
         // that should use devDependencies
         'yola/import/no-extraneous-dependencies': [
           'error',
