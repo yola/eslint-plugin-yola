@@ -24,11 +24,12 @@ module.exports = () => ({
       ],
       env: {
         mocha: true,
+        jest: true,
       },
       rules: {
-        // Override `import/no-extraneous-dependencies` rule for test files
+        // Override `yola/import/no-extraneous-dependencies` rule for test files
         // that should use devDependencies
-        'import/no-extraneous-dependencies': [
+        'yola/import/no-extraneous-dependencies': [
           'error',
           {
             devDependencies: true,

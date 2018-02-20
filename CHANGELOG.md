@@ -1,12 +1,16 @@
 # Change log
 
+## dev
+
+* Fix overrides for test files
+
 ## 0.2.1
 
 * Fix bad release
 
 ## 0.2.0
 
-* Add `eslint-plugin-html` for inline javascript linting.
+* Add `eslint-plugin-html` for inline javascript linting
 
 ## 0.1.3
 
