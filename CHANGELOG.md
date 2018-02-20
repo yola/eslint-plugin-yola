@@ -1,6 +1,6 @@
 # Change log
 
-## dev
+## 0.2.2
 
 * Fix overrides for test files
 
