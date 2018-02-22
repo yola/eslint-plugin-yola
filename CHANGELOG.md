@@ -1,5 +1,9 @@
 # Change log
 
+## dev
+
+* Add prettier config to extend from
+
 ## 0.2.2
 
 * Fix overrides for test files
