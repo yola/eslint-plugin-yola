@@ -1,6 +1,6 @@
 # Change log
 
-## dev
+## 0.3.0
 
 * Add prettier config to extend from
 
