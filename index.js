@@ -2,14 +2,18 @@
 
 const baseConfig = require('eslint-config-airbnb-base');
 const extendedConfig = require('eslint-config-airbnb');
+const prettierConfig = require('eslint-config-prettier');
 
 const createConfig = require('./src/create-config');
 const rules = require('./src/rules');
 
-module.exports = {
+const plugin = {
   configs: {
     base: createConfig(baseConfig),
     react: createConfig(extendedConfig),
+    prettier: createConfig(prettierConfig),
   },
-  rules
+  rules,
 };
+
+module.exports = plugin;

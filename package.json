@@ -21,11 +21,14 @@
     "babel-eslint": "8.0.1",
     "eslint-config-airbnb": "16.x",
     "eslint-config-airbnb-base": "12.x",
+    "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-html": "^4.0.2",
     "eslint-plugin-import": "2.x",
     "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.6.1",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "prettier": "^1.10.2"
   },
   "devDependencies": {
     "eslint": "^4.18.0",
