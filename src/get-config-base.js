@@ -8,20 +8,13 @@ module.exports = () => ({
     'no-console': [
       'error',
       {
-        allow: [
-          'error',
-        ],
+        allow: ['error'],
       },
     ],
   },
   overrides: [
     {
-      files: [
-        '**/*-spec.js',
-        '**/*-spec.jsx',
-        '**/*.spec.js',
-        '**/*.spec.jsx',
-      ],
+      files: ['**/*-spec.js', '**/*-spec.jsx', '**/*.spec.js', '**/*.spec.jsx'],
       env: {
         mocha: true,
         jest: true,

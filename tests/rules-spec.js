@@ -22,9 +22,9 @@ describe('get plugins rules object', () => {
   });
 
   it('contain rules from dependency plugins prefixed by its name', () => {
-    const hasDependencyRules = pluginDependencies
-      .every(plugin => pluginRulesNames
-        .every(pluginRuleName => rules[`${plugin}/${pluginRuleName}`]));
+    const hasDependencyRules = pluginDependencies.every((plugin) =>
+      pluginRulesNames.every((pluginRuleName) => rules[`${plugin}/${pluginRuleName}`]),
+    );
 
     expect(hasDependencyRules).toBe(true);
   });

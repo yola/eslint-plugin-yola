@@ -7,13 +7,12 @@ const getConfigBase = require('./get-config-base');
 const pluginsDependencies = require('./plugins-dependencies');
 const propsToPick = require('./props-to-pick');
 
-const isPluginRule = ruleName => pluginsDependencies
-  .some(plugin => ruleName.indexOf(`${plugin}/`) === 0);
+const isPluginRule = (ruleName) =>
+  pluginsDependencies.some((plugin) => ruleName.indexOf(`${plugin}/`) === 0);
 
 // To avoid conflicts, rules from dependency plugins are scoped by prefixing
-const getConfigRules = config => Object
-  .keys(config.rules)
-  .reduce((rules, ruleName) => {
+const getConfigRules = (config) =>
+  Object.keys(config.rules).reduce((rules, ruleName) => {
     const result = Object.assign({}, rules);
     const key = isPluginRule(ruleName) ? `yola/${ruleName}` : ruleName;
 

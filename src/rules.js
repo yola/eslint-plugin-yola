@@ -7,12 +7,10 @@ module.exports = pluginsDependencies.reduce((rules, pluginName) => {
   const result = Object.assign({}, rules);
 
   if (plugin.rules) {
-    Object.keys(plugin.rules)
-      .forEach((ruleName) => {
-        result[`${pluginName}/${ruleName}`] = plugin.rules[ruleName];
-      });
+    Object.keys(plugin.rules).forEach((ruleName) => {
+      result[`${pluginName}/${ruleName}`] = plugin.rules[ruleName];
+    });
   }
-
 
   return result;
 }, {});

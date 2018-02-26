@@ -4,12 +4,7 @@ const getConfigBase = require('../src/get-config-base');
 const createConfig = require('../src/create-config');
 const propsToPick = require('../src/props-to-pick');
 
-const baseProps = [
-  'overrides',
-  'parser',
-  'plugins',
-  'rules',
-];
+const baseProps = ['overrides', 'parser', 'plugins', 'rules'];
 
 const propsToHave = propsToPick.concat(baseProps);
 
@@ -47,15 +42,15 @@ describe('createConfig creates extended config', () => {
   });
 
   it('merge extension rules into base', () => {
-    const isRulesMerged = Object.keys(mockRules)
-      .every(rule => !!extendedConfig.rules[rule]);
+    const isRulesMerged = Object.keys(mockRules).every((rule) => !!extendedConfig.rules[rule]);
 
     expect(isRulesMerged).toBe(true);
   });
 
   it('picks only necessary props from extension', () => {
-    const isPickedPropsOnly = Object.keys(extendedConfig)
-      .every(prop => propsToHave.indexOf(prop) !== -1);
+    const isPickedPropsOnly = Object.keys(extendedConfig).every(
+      (prop) => propsToHave.indexOf(prop) !== -1,
+    );
 
     expect(isPickedPropsOnly).toBe(true);
   });

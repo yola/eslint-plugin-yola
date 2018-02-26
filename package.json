@@ -4,8 +4,10 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint -c .eslintrc.js ./**/*.js",
-    "test": "jest",
-    "prepublish": "npm run lint && npm run test"
+    "precommit": "lint-staged",
+    "prepublish": "npm run lint && npm run test",
+    "prettier": "prettier ./**/* --write",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -21,7 +23,6 @@
     "babel-eslint": "8.0.1",
     "eslint-config-airbnb": "16.x",
     "eslint-config-airbnb-base": "12.x",
-    "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-html": "^4.0.2",
     "eslint-plugin-import": "2.x",
     "eslint-plugin-jsx-a11y": "^6.0.3",
@@ -30,15 +31,20 @@
   },
   "devDependencies": {
     "eslint": "^4.18.0",
-    "jest": "^21.2.1"
+    "eslint-config-prettier": "^2.9.0",
+    "husky": "^0.14.3",
+    "jest": "^21.2.1",
+    "lint-staged": "^7.0.0",
+    "prettier": "^1.10.2"
   },
   "peerDependencies": {
     "eslint": "4.x",
     "prettier": "1.10.2"
   },
   "jest": {
-    "testMatch": [
-      "**/tests/*-spec.js?(x)"
-    ]
+    "testMatch": ["**/tests/*-spec.js?(x)"]
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": ["prettier --write", "git add"]
   }
 }
