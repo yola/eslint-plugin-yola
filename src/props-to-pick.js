@@ -1,1 +1,1 @@
-module.exports = ['env', 'parserOptions', 'root', 'settings'];
+module.exports = ["env", "parserOptions", "root", "settings"];
