@@ -26,7 +26,7 @@ module.exports = {
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md
     "import/no-unresolved": [
       "error",
-      { commonjs: true, ignore: ["src"], caseSensitive: true }
+      { commonjs: true, ignore: ["^src/"], caseSensitive: true }
     ],
 
     // ensure named imports coupled with named exports
