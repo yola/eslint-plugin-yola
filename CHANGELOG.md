@@ -1,6 +1,6 @@
 # Change log
 
-## dev
+## 1.0.0
 
 * Now `eslint-plugin-yola` uses its own standalone config instead of airbnb's one
 
