@@ -5,7 +5,7 @@
   "scripts": {
     "lint": "eslint -c .eslintrc.js ./**/*.js",
     "precommit": "lint-staged",
-    "prepublish": "npm run lint && npm run test",
+    "prepublishOnly": "npm run lint && npm run test",
     "prettier": "prettier ./**/* --write",
     "test": "jest"
   },
