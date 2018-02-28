@@ -1,35 +1,46 @@
 # eslint-plugin-yola
 
 An eslint plugin to lint Yola's javascript.  
-ES6 code style is based on [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript). 
+ES6 code style is based on [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript).
 
 ## Installation
+
 Install eslint and plugin package with npm as development dependencies:
+
 ```
 npm install --save-dev eslint eslint-plugin-yola
 ```
 
 ## Usage
+
 There are two configurations available:
-- **yola/base** - based on `eslint-config-airbnb-base` - used to lint ES6 code 
-- **yola/react** - based on `eslint-config-airbnb` - used to lint React components code
+
+* **yola/base** - based on `eslint-config-airbnb-base` - used to lint ES6 code
+* **yola/react** - based on `eslint-config-airbnb` - used to lint React components code
 
 ## Configuration
+
 Create config file in the root of your project `.eslintrc.js` that extends `eslint-plugin-yola`:
+
 ```javascript
-module.exports = { extends: 'plugin:yola/base' }
+module.exports = { extends: 'plugin:yola/base' };
 ```
+
 Note: configs are depend on eslint plugins `import`, `react`, `jsx-a11y`. In order to avoid usage conflicts, rules that extracted from these plugins are prefixed with `yola/`. So if you need to override some rules you must use prefix. eg override of `react/no-string-refs`
+
 ```javascript
-module.exports = { 
- extends: 'plugin:yola/react',
- rules: {
-   'yola/react/no-string-refs': 'warn',
- }
-}
-```  
-## Run    
+module.exports = {
+  extends: 'plugin:yola/react',
+  rules: {
+    'yola/react/no-string-refs': 'warn',
+  },
+};
+```
+
+## Run
+
 With npm scripts:
+
 ```
 "lint": "eslint ./src/**/*.js"
 ```

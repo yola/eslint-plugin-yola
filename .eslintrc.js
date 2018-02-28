@@ -1,5 +1,5 @@
 module.exports = {
-  extends: 'airbnb-base',
+  extends: [require.resolve('./src/eslint-config-yola/base'), 'prettier'],
   env: {
     browser: false,
     jest: true,
@@ -10,6 +10,6 @@ module.exports = {
   // Error: Block-scoped declarations (let, const, function, class)
   // not yet supported outside strict mode
   rules: {
-    strict: 'off'
-  }
+    strict: 'off',
+  },
 };
