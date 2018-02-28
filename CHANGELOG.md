@@ -1,6 +1,6 @@
 # Change log
 
-# dev
+# 1.0.1
 
 * Add prettier
 
