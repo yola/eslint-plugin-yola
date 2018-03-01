@@ -49,7 +49,7 @@ describe('createConfig creates extended config', () => {
 
   it('picks only necessary props from extension', () => {
     const isPickedPropsOnly = Object.keys(extendedConfig).every(
-      (prop) => propsToHave.indexOf(prop) !== -1,
+      (prop) => propsToHave.indexOf(prop) !== -1
     );
 
     expect(isPickedPropsOnly).toBe(true);
