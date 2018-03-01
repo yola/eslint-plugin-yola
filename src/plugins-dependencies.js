@@ -12,5 +12,5 @@ module.exports = reduce(
 
     return plugins;
   },
-  [],
+  []
 );
