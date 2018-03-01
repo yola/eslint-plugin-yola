@@ -1,5 +1,9 @@
 # Change log
 
+# 1.0.3
+
+* Fix bad release
+
 # 1.0.2
 
 * Add missing dependencies
