@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-yola",
-  "version": "1.0.4-dev",
+  "version": "1.0.4-dev.1",
   "main": "index.js",
   "scripts": {
     "lint": "eslint -c .eslintrc.js ./**/*.js",
