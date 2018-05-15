@@ -1,5 +1,10 @@
 # Change log
 
+# dev
+
+* Bump up [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react/)
+  to version `7.8.2`
+
 # 1.0.3
 
 * Fix bad release
