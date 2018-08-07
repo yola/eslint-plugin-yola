@@ -1,8 +1,8 @@
 # Change log
 
-# DEV
+# 1.1.0
 
-Add import/no-unresolved rule
+- Add import/no-unresolved rule
 
 # 1.0.5
 
