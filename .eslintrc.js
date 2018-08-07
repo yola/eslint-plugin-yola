@@ -11,6 +11,5 @@ module.exports = {
   // not yet supported outside strict mode
   rules: {
     strict: 'off',
-    'import/no-unresolved': [2, { caseSensitive: false }],
   },
 };
