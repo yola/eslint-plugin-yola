@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-yola",
-  "version": "1.2.0-maleks.rc.1",
+  "version": "1.2.0",
   "main": "index.js",
   "scripts": {
     "lint": "eslint -c .eslintrc.js ./**/*.js",
