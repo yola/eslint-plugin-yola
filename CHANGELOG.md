@@ -1,5 +1,9 @@
 # Change log
 
+# 1.2.0
+
+- Add `react-hooks` plugin
+
 # 1.1.0
 
 - Add import/no-unresolved rule
