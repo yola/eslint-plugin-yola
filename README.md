@@ -15,9 +15,9 @@ npm install --save-dev eslint eslint-plugin-yola
 
 There are two configurations available:
 
-* **yola/base** - based on `eslint-config-airbnb-base` - used to lint ES6 code
-* **yola/react** - based on `eslint-config-airbnb` - used to lint React components code
-* **yola/prettier** - an `eslint-config-prettier` to avoid conflicts using [prettier](https://github.com/prettier/prettier)
+- **yola/base** - based on `eslint-config-airbnb-base` - used to lint ES6 code
+- **yola/react** - based on `eslint-config-airbnb` - used to lint React components code
+- **yola/prettier** - an `eslint-config-prettier` to avoid conflicts using [prettier](https://github.com/prettier/prettier)
 
 ## Configuration
 
