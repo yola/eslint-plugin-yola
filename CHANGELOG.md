@@ -1,31 +1,35 @@
 # Change log
 
-# 1.2.0
+## 1.2.1
+
+- Fix peer dependencies
+
+## 1.2.0
 
 - Add `react-hooks` plugin
 
-# 1.1.0
+## 1.1.0
 
 - Add import/no-unresolved rule
 
-# 1.0.5
+## 1.0.5
 
 - Bump up [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react/)
   to version `7.8.2`
 
-# 1.0.4
+## 1.0.4
 
 Bad release
 
-# 1.0.3
+## 1.0.3
 
 - Fix bad release
 
-# 1.0.2
+## 1.0.2
 
 - Add missing dependencies
 
-# 1.0.1
+## 1.0.1
 
 - Add prettier
 
