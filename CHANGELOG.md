@@ -7,11 +7,11 @@
 
 **Breaking changes**
 
-Required node version: 14.
-Peer dependencies:
-
-- `eslint@8.x`,
-- `prettier@2.x`
+- move `imports` config from `base` to separate config
+- changed required node version to 14.
+- updated peer dependencies
+  - `eslint@8.x`,
+  - `prettier@2.x`
 
 Almost all dependencies were update though few major versions,
 so it can work a bit different.
