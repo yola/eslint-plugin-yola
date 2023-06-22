@@ -39,5 +39,12 @@ module.exports = () => ({
         ],
       },
     },
+    {
+      files: ['**/*.spec.ts', '**/*.spec.tsx'],
+      rules: {
+        'dot-notation': 'off',
+        'prefer-destructuring': 'off',
+      },
+    },
   ],
 });
