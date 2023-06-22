@@ -1,5 +1,21 @@
 # Change log
 
+## 2.0.0
+
+- update dependencies
+- add support for typescript
+
+**Breaking changes**
+
+Required node version: 14.
+Peer dependencies:
+
+- `eslint@8.x`,
+- `prettier@2.x`
+
+Almost all dependencies were update though few major versions,
+so it can work a bit different.
+
 ## 1.2.1
 
 - Fix peer dependencies

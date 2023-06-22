@@ -1,5 +1,5 @@
 module.exports = {
-  extends: [require.resolve('./src/eslint-config-yola/base'), 'prettier'],
+  extends: [require.resolve('./src/eslint-config-yola/base'), 'plugin:prettier/recommended'],
   env: {
     browser: false,
     jest: true,
