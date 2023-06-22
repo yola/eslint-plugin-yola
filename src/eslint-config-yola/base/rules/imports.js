@@ -14,7 +14,7 @@ module.exports = {
         extensions: ['.mjs', '.js', '.json'],
       },
     },
-    'import/extensions': ['.js', '.mjs', '.jsx'],
+    'import/extensions': ['.js', '.mjs', '.jsx', '.ts', '.tsx'],
     'import/core-modules': ['src'],
     'import/ignore': ['node_modules', '\\.(coffee|scss|css|less|hbs|svg|json)$'],
   },
@@ -66,9 +66,9 @@ module.exports = {
           'tests/**', // also common npm pattern
           'spec/**', // mocha, rspec-like pattern
           '**/__tests__/**', // jest pattern
-          'test.{js,jsx}', // repos with a single test file
-          'test-*.{js,jsx}', // repos with multiple top-level test files
-          '**/*.{test,spec}.{js,jsx}', // tests where the extension denotes that it is a test
+          'test.{js,jsx,ts,tsx}', // repos with a single test file
+          'test-*.{js,jsx,ts,tsx}', // repos with multiple top-level test files
+          '**/*.{test,spec}.{js,jsx,ts,tsx}', // tests where the extension denotes that it is a test
           '**/jest.config.js', // jest config
           '**/webpack.config.js', // webpack config
           '**/webpack.config.*.js', // webpack config
