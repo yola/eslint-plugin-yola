@@ -9,7 +9,7 @@ module.exports = reduce(
     if (dependency.indexOf('eslint-plugin') === 0) {
       plugins.push(dependency.replace('eslint-plugin-', ''));
     } else if (dependency === '@typescript-eslint/eslint-plugin') {
-      plugins.push('typescript');
+      plugins.push('@typescript-eslint');
     }
 
     return plugins;

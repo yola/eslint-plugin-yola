@@ -5,7 +5,7 @@ const pluginDependencies = require('../src/plugins-dependencies');
 const pluginRulesNames = ['mockRuleFoo', 'mockRuleBar', 'mockRuleBaz'];
 
 pluginDependencies.forEach((pluginName) => {
-  if (pluginName === 'typescript') {
+  if (pluginName === '@typescript-eslint') {
     jest.mock('@typescript-eslint/eslint-plugin', () => ({
       rules: {
         mockRuleFoo: true,

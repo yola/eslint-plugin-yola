@@ -6,7 +6,7 @@ module.exports = pluginsDependencies.reduce((rules, pluginName) => {
   let plugin;
 
   switch (pluginName) {
-    case 'typescript':
+    case '@typescript-eslint':
       // eslint-disable-next-line global-require, import/no-dynamic-require
       plugin = require('@typescript-eslint/eslint-plugin');
       break;
