@@ -30,6 +30,10 @@ const extendConfig = (config, ext) => {
 
   const extensionRules = { rules: getConfigRules(extension) };
 
+  if (extension.overrides) {
+    config.push(...extension.overrides);
+  }
+
   return merge(config, pick(extension, propsToPick), extensionRules);
 };
 
