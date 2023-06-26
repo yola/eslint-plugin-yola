@@ -13,8 +13,15 @@ module.exports = {
       node: {
         extensions: ['.mjs', '.js', '.json'],
       },
+      typescript: {
+        extensions: ['.mts', '.ts', '.tsx'],
+      },
+    },
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
     'import/extensions': ['.js', '.mjs', '.jsx', '.ts', '.tsx'],
+    'import/external-module-folders': ['node_modules', 'node_modules/@types'],
     'import/core-modules': ['src'],
     'import/ignore': ['node_modules', '\\.(coffee|scss|css|less|hbs|svg|json)$'],
   },
