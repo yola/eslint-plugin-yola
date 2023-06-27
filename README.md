@@ -17,6 +17,7 @@ There are two configurations available:
 
 - **yola/base** - based on `eslint-config-airbnb-base` - used to lint ES6 code
 - **yola/react** - based on `eslint-config-airbnb` - used to lint React components code
+- **yola/typescript** - based on `@typescript-eslint/eslint-plugin` - used to lint type script code
 - **yola/prettier** - an `eslint-config-prettier` to avoid conflicts using [prettier](https://github.com/prettier/prettier)
 
 ## Configuration
