@@ -7,7 +7,6 @@
 
 **Breaking changes**
 
-- move `imports` config from `base` to separate config
 - changed required node version to 14.
 - updated peer dependencies
   - `eslint@8.x`,
