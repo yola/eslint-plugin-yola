@@ -27,7 +27,7 @@ module.exports = {
     // https://eslint.org/docs/rules/arrow-parens
     'arrow-parens': [
       'error',
-      'as-needed',
+      'always',
       {
         requireForBlockBody: true,
       },

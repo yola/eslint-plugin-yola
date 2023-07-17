@@ -2,6 +2,7 @@
 
 const merge = require('lodash/merge');
 const pick = require('lodash/pick');
+const get = require('lodash/get');
 
 const getConfigBase = require('./get-config-base');
 const pluginsDependencies = require('./plugins-dependencies');
@@ -21,7 +22,8 @@ const getConfigRules = (config) =>
     return result;
   }, {});
 
-const extendConfig = (config, ext) => {
+const extendConfig = (conf, ext) => {
+  const config = conf;
   let extension = ext;
 
   if (typeof extension === 'string') {
@@ -29,6 +31,10 @@ const extendConfig = (config, ext) => {
   }
 
   const extensionRules = { rules: getConfigRules(extension) };
+
+  if (extension.overrides) {
+    config.overrides = get(config, 'overrides', []).concat(extension.overrides);
+  }
 
   return merge(config, pick(extension, propsToPick), extensionRules);
 };

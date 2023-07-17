@@ -1,5 +1,5 @@
 module.exports = () => ({
-  parser: require.resolve('babel-eslint'),
+  parser: require.resolve('@babel/eslint-parser'),
   plugins: ['yola'],
   env: {
     browser: true,
@@ -14,7 +14,16 @@ module.exports = () => ({
   },
   overrides: [
     {
-      files: ['**/*-spec.js', '**/*-spec.jsx', '**/*.spec.js', '**/*.spec.jsx'],
+      files: [
+        '**/*-spec.js',
+        '**/*-spec.jsx',
+        '**/*.spec.js',
+        '**/*.spec.jsx',
+        '**/*-spec.ts',
+        '**/*-spec.tsx',
+        '**/*.spec.ts',
+        '**/*.spec.tsx',
+      ],
       env: {
         mocha: true,
         jest: true,

@@ -8,6 +8,8 @@ module.exports = reduce(
   (plugins, version, dependency) => {
     if (dependency.indexOf('eslint-plugin') === 0) {
       plugins.push(dependency.replace('eslint-plugin-', ''));
+    } else if (dependency === '@typescript-eslint/eslint-plugin') {
+      plugins.push('@typescript-eslint');
     }
 
     return plugins;

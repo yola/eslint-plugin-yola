@@ -3,7 +3,19 @@
 const pluginsDependencies = require('./plugins-dependencies');
 
 module.exports = pluginsDependencies.reduce((rules, pluginName) => {
-  const plugin = require(`eslint-plugin-${pluginName}`); // eslint-disable-line global-require, import/no-dynamic-require
+  let plugin;
+
+  switch (pluginName) {
+    case '@typescript-eslint':
+      // eslint-disable-next-line global-require, import/no-dynamic-require
+      plugin = require('@typescript-eslint/eslint-plugin');
+      break;
+    default:
+      // eslint-disable-next-line global-require, import/no-dynamic-require
+      plugin = require(`eslint-plugin-${pluginName}`);
+      break;
+  }
+
   const result = Object.assign({}, rules);
 
   if (plugin.rules) {

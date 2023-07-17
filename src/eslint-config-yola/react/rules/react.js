@@ -98,6 +98,7 @@ module.exports = {
       {
         ignoreRefs: true,
         allowArrowFunctions: true,
+        allowFunctions: true,
         allowBind: false,
       },
     ],

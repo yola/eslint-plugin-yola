@@ -2,6 +2,7 @@
 
 const baseConfig = require('./src/eslint-config-yola/base');
 const reactConfig = require('./src/eslint-config-yola/react');
+const typescriptConfig = require('./src/eslint-config-yola/typescript');
 const prettierConfig = require('eslint-config-prettier');
 
 const createConfig = require('./src/create-config');
@@ -12,6 +13,7 @@ const plugin = {
     base: createConfig(baseConfig),
     react: createConfig(reactConfig),
     prettier: createConfig(prettierConfig),
+    typescript: createConfig(typescriptConfig),
   },
   rules,
 };
