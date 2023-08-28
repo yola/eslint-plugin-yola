@@ -1,5 +1,10 @@
 # Change log
 
+## 2.1.0
+
+- Restrict `enum` usage for typescript
+- Add `no-throw-literal` rule for typescript
+
 ## 2.0.0
 
 - update dependencies
