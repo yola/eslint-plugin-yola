@@ -17,8 +17,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
        node-version: 14.21.3
-       cache: 'npm'
-       cache-dependency-path: './server/package.json'
+       useLockFile: false
     - run: npm install
     - run: npm install     
     - run: npm test
