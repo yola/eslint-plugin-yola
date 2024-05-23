@@ -18,6 +18,5 @@ jobs:
       with:
        node-version: 14.21.3
        useLockFile: false
-    - run: npm install
     - run: npm install     
     - run: npm test
