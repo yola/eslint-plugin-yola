@@ -1,5 +1,9 @@
 # Change log
 
+## 2.2.0
+
+- Disable rule `require-default-props` for react components
+
 ## 2.1.0
 
 - Restrict `enum` usage for typescript
