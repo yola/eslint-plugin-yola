@@ -2,7 +2,8 @@
 
 ## 2.2.0
 
-- Disable rule `require-default-props` for react components
+- Disable `require-default-props` rule for react components
+- Change `display-name` rule to `error`
 
 ## 2.1.0
 
