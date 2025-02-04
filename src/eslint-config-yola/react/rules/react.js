@@ -36,7 +36,7 @@ module.exports = {
 
     // Prevent missing displayName in a React component definition
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/display-name.md
-    'react/display-name': ['off', { ignoreTranspilerName: false }],
+    'react/display-name': 'error',
 
     // Forbid certain propTypes (any, array, object)
     // https://github.com/yannickcr/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/forbid-prop-types.md
@@ -402,6 +402,8 @@ module.exports = {
     'react/require-default-props': [
       'error',
       {
+        classes: 'defaultProps',
+        functions: 'defaultArguments',
         forbidDefaultForRequired: true,
       },
     ],

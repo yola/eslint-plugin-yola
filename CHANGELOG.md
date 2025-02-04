@@ -1,5 +1,10 @@
 # Change log
 
+## 2.2.0
+
+- Make required `defaultArguments` instead of `defaultProps` in `require-default-props` rule for function react components
+- Change `display-name` rule to `error`
+
 ## 2.1.0
 
 - Restrict `enum` usage for typescript
