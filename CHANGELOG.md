@@ -3,6 +3,7 @@
 ## 2.3.0
 
 - Disable the rule `@typescript-eslint/explicit-function-return-type`
+- Disable the rule `@typescript-eslint/explicit-module-boundary-types`
 
 ## 2.2.0
 
