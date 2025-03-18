@@ -1,5 +1,9 @@
 # Change log
 
+## 2.3.0
+
+- Disable the rule `@typescript-eslint/explicit-function-return-type`
+
 ## 2.2.0
 
 - Make required `defaultArguments` instead of `defaultProps` in `require-default-props` rule for function react components
