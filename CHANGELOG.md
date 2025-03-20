@@ -2,8 +2,10 @@
 
 ## 2.3.0
 
-- Disable the rule `@typescript-eslint/explicit-function-return-type`
-- Disable the rule `@typescript-eslint/explicit-module-boundary-types`
+- Disable next rules:
+  - `@typescript-eslint/explicit-function-return-type`
+  - `@typescript-eslint/explicit-module-boundary-types`
+  - `@typescript-eslint/promise-function-async`
 
 ## 2.2.0
 
