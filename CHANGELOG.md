@@ -6,6 +6,8 @@
   - `@typescript-eslint/explicit-function-return-type`
   - `@typescript-eslint/explicit-module-boundary-types`
   - `@typescript-eslint/promise-function-async`
+- Upgrade dependencies to lates version
+- Downgrade `lint-staged` to version `12.5.0`
 
 ## 2.2.0
 
