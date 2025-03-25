@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-yola",
-  "version": "2.3.0-ds.rc.4",
+  "version": "2.3.0",
   "main": "index.js",
   "scripts": {
     "lint": "eslint -c .eslintrc.js ./",
@@ -67,6 +67,6 @@
     ]
   },
   "engines": {
-    "node": "^14.17.0"
+    "node": "^14.21.3"
   }
 }
