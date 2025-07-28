@@ -1,5 +1,14 @@
 # Change log
 
+## 2.3.2
+
+- update `eslint-config-prettier` version
+- update `eslint-plugin-prettier` version
+
+## 2.3.1
+
+- set compatible with node v14 `eslint-import-resolver-typescript` version
+
 ## 2.3.0
 
 - Disable next rules:
