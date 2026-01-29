@@ -1,5 +1,9 @@
 # Change log
 
+## 2.3.3
+
+- Update `Node.js` engine requirement to allow versions greater than or equal to 14.21.3
+
 ## 2.3.2
 
 - update `eslint-config-prettier` version
