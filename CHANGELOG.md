@@ -1,5 +1,9 @@
 # Change log
 
+## 2.3.4
+
+- Update `lodash` version to `4.18.1` to fix security vulnerabilities
+
 ## 2.3.3
 
 - Update `Node.js` engine requirement to allow versions greater than or equal to 14.21.3
